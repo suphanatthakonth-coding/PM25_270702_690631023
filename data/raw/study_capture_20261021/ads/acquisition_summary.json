@@ -1,0 +1,17 @@
+{
+  "status": "ALL_REQUESTS_TRANSFERRED_AND_RAW_QC_CHECKED",
+  "checked_at_utc": "2026-10-21T21:33:43.649628+00:00",
+  "planned_requests": 50,
+  "checked_requests": 50,
+  "remaining_requests": 0,
+  "all_raw_transfers_and_field_coverage_complete": true,
+  "fields_with_missing_or_nonfinite": 0,
+  "pm_and_fire_7day_coverage_candidate_target_days": 731,
+  "actual_weather_joined_common_rows": null,
+  "historical_availability_certified": false,
+  "full_primary_experiment_gate_passed": false,
+  "models_rerun": false,
+  "project_fill_count": 0,
+  "project_drop_count": 0,
+  "scope": "Acquisition and coverage only; source revisions, availability and the actual shared cohort remain to be reviewed."
+}

@@ -1,0 +1,14 @@
+{
+  "recorded_at_utc": "2026-10-21T21:31:37.744285+00:00",
+  "versions": {
+    "python": "3.12.13",
+    "ecCodes_library": "2.50.0",
+    "ecmwf-datastores-client": "0.5.3",
+    "eccodes": "2.50.0",
+    "numpy": "2.0.2"
+  },
+  "lock": {
+    "plan_sha256": "7b2d5bf377f54d999113849545ecf913360ad90149880c336ca87f5a0c73caca",
+    "source_normalized_utf8_sha256": "fe5152532ac99df8a796df999b81974d42664eba0e784139922e729396232660"
+  }
+}
