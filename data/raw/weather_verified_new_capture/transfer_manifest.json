@@ -1,0 +1,88 @@
+[
+  {
+    "file": "weather_previous_full_2024.response",
+    "requested_url": "https://previous-runs-api.open-meteo.com/v1/forecast",
+    "parameters": {
+      "latitude": 18.7883,
+      "longitude": 98.9853,
+      "hourly": "temperature_2m_previous_day1,relative_humidity_2m_previous_day1,wind_speed_10m_previous_day1,wind_direction_10m_previous_day1,precipitation_previous_day1,surface_pressure_previous_day1",
+      "models": "gfs_global",
+      "timezone": "UTC",
+      "wind_speed_unit": "ms",
+      "start_date": "2024-01-01",
+      "end_date": "2024-12-31"
+    },
+    "request_started_at_utc": "2026-10-21T23:33:05.382936+00:00",
+    "retrieved_at_utc": "2026-10-21T23:33:06.821028+00:00",
+    "http_status": 200,
+    "bytes": 413730,
+    "sha256": "a7ef16ef05fe799c803e02355872c8574fd94a1bef0804a12d609ae8dc77919c",
+    "credentials_supplied_by_tool": false,
+    "transport": "requests.get",
+    "acquirer_sha256": "00796c5f081ac60b8f31675fc1fe1eb8d63aaf5ac29cfd0861c85f1b229f4272",
+    "status": "COMPLETE",
+    "validation": {
+      "status": "PASS",
+      "hourly_count": 8784,
+      "first_time_utc": "2024-01-01T00:00:00+00:00",
+      "last_time_utc": "2024-12-31T23:00:00+00:00",
+      "nonmissing_by_field": {
+        "temperature_2m_previous_day1": 8340,
+        "relative_humidity_2m_previous_day1": 8340,
+        "wind_speed_10m_previous_day1": 8340,
+        "wind_direction_10m_previous_day1": 8340,
+        "precipitation_previous_day1": 8340,
+        "surface_pressure_previous_day1": 8340
+      },
+      "response_grid": {
+        "latitude": 18.802475,
+        "longitude": 99.02344
+      },
+      "project_fill_count": 0,
+      "scope": "Raw schema, units and requested hours; null values remain missing. No historical publication certification."
+    }
+  },
+  {
+    "file": "weather_previous_full_2025.response",
+    "requested_url": "https://previous-runs-api.open-meteo.com/v1/forecast",
+    "parameters": {
+      "latitude": 18.7883,
+      "longitude": 98.9853,
+      "hourly": "temperature_2m_previous_day1,relative_humidity_2m_previous_day1,wind_speed_10m_previous_day1,wind_direction_10m_previous_day1,precipitation_previous_day1,surface_pressure_previous_day1",
+      "models": "gfs_global",
+      "timezone": "UTC",
+      "wind_speed_unit": "ms",
+      "start_date": "2025-01-01",
+      "end_date": "2025-12-31"
+    },
+    "request_started_at_utc": "2026-10-21T23:33:06.951519+00:00",
+    "retrieved_at_utc": "2026-10-21T23:33:08.288245+00:00",
+    "http_status": 200,
+    "bytes": 411574,
+    "sha256": "fb9c309c9c3c6ce46e61fd04637a33c30244895e0792358df977c403585a8ce4",
+    "credentials_supplied_by_tool": false,
+    "transport": "requests.get",
+    "acquirer_sha256": "00796c5f081ac60b8f31675fc1fe1eb8d63aaf5ac29cfd0861c85f1b229f4272",
+    "status": "COMPLETE",
+    "validation": {
+      "status": "PASS",
+      "hourly_count": 8760,
+      "first_time_utc": "2025-01-01T00:00:00+00:00",
+      "last_time_utc": "2025-12-31T23:00:00+00:00",
+      "nonmissing_by_field": {
+        "temperature_2m_previous_day1": 8760,
+        "relative_humidity_2m_previous_day1": 8760,
+        "wind_speed_10m_previous_day1": 8760,
+        "wind_direction_10m_previous_day1": 8760,
+        "precipitation_previous_day1": 8760,
+        "surface_pressure_previous_day1": 8760
+      },
+      "response_grid": {
+        "latitude": 18.802475,
+        "longitude": 99.02344
+      },
+      "project_fill_count": 0,
+      "scope": "Raw schema, units and requested hours; null values remain missing. No historical publication certification."
+    }
+  }
+]

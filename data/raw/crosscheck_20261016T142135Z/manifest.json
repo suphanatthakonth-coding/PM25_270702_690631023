@@ -1,0 +1,54 @@
+{
+  "run_id": "crosscheck_20261016T142135Z",
+  "status": "complete",
+  "files": [
+    {
+      "endpoint": "https://air4thai.pcd.go.th/services/getNewAQI_JSON.php",
+      "params": {},
+      "retrieved_at_utc": "2026-10-16T14:21:35.730041+00:00",
+      "http_status": 200,
+      "transport": "Windows native HTTPS; TLS verified",
+      "reason": "Python CA bundle could not build the server certificate chain.",
+      "file": "air4thai_snapshot.json",
+      "sha256": "863a99c7466e1183157f6c905b8eb48f82c6d2151aaccfd984e38e016309775b",
+      "bytes": 134449
+    },
+    {
+      "endpoint": "https://air-quality-api.open-meteo.com/v1/air-quality",
+      "params": {
+        "latitude": 18.7909333,
+        "longitude": 98.99,
+        "hourly": "pm2_5",
+        "domains": "cams_global",
+        "timezone": "Asia/Bangkok",
+        "start_date": "2026-10-14",
+        "end_date": "2026-10-16"
+      },
+      "retrieved_at_utc": "2026-10-16T14:21:37.185881+00:00",
+      "http_status": 200,
+      "transport": "requests; TLS verified",
+      "file": "cams_36t_hourly.json",
+      "sha256": "90260a62dc231ab0a6745acdfcdb90ccb2a9835b2f2c92ad1d32e17254effb91",
+      "bytes": 1973
+    },
+    {
+      "endpoint": "https://air-quality-api.open-meteo.com/v1/air-quality",
+      "params": {
+        "latitude": 18.840732,
+        "longitude": 98.96978,
+        "hourly": "pm2_5",
+        "domains": "cams_global",
+        "timezone": "Asia/Bangkok",
+        "start_date": "2026-10-14",
+        "end_date": "2026-10-16"
+      },
+      "retrieved_at_utc": "2026-10-16T14:21:38.161480+00:00",
+      "http_status": 200,
+      "transport": "requests; TLS verified",
+      "file": "cams_35t_hourly.json",
+      "sha256": "910456f74068e81aa4ea46f716a11833b5c2300f120a5f9102b356d2228a845c",
+      "bytes": 1973
+    }
+  ],
+  "purpose": "C6 only: contemporary comparison outside the historical modelling interval"
+}
