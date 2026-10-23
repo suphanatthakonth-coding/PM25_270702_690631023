@@ -1,0 +1,31 @@
+[
+  {
+    "family": "pm",
+    "endpoint": "https://ads.atmosphere.copernicus.eu/api/retrieve/v1/processes/cams-global-atmospheric-composition-forecasts",
+    "checked_at_utc": "2026-10-20T14:39:57.991467+00:00",
+    "http_status": 200,
+    "raw_schema_file": "pm_public_process_schema.json",
+    "sha256": "f208f5e490cf4ad412365f80004ef5ae485305eb7d5283b8a5d636ba4ca4b48a",
+    "all_advertised_enum_choices_match": true,
+    "unadvertised_legacy_filters": [
+      "date"
+    ],
+    "legacy_filter_basis": "Same date/area spelling used by successful user pilots; multi-day ranges still require actual bulk execution.",
+    "authenticated_request_sent": false
+  },
+  {
+    "family": "gfas",
+    "endpoint": "https://ads.atmosphere.copernicus.eu/api/retrieve/v1/processes/cams-global-fire-emissions-gfas",
+    "checked_at_utc": "2026-10-20T14:39:59.730349+00:00",
+    "http_status": 200,
+    "raw_schema_file": "gfas_public_process_schema.json",
+    "sha256": "052dca19667372ae67569ceb4f7ac48610096cb0fbbce60166180f6444249fea",
+    "all_advertised_enum_choices_match": true,
+    "unadvertised_legacy_filters": [
+      "date",
+      "area"
+    ],
+    "legacy_filter_basis": "Same date/area spelling used by successful user pilots; multi-day ranges still require actual bulk execution.",
+    "authenticated_request_sent": false
+  }
+]

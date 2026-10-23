@@ -1,0 +1,31 @@
+notebook,cell,purpose,variables,code_lines
+01_fetch_data.ipynb,3,Locate the exact project,"ROOT, BASE, PROJECT_NAME: project paths; no scientific inputs.",24
+01_fetch_data.ipynb,5,Check environment and record run identity,CONFIG: fixed configuration; MODE: captured-data replay; run_state: current source/config hashes.,25
+01_fetch_data.ipynb,7,Inspect the pre-fit source/target contract,"analysis_plan: H1-H4; revision9_contract: issue, source days, selection and evidence limits.",3
+01_fetch_data.ipynb,9,Decode and verify every preserved source request,raw_folder/raw_manifest: immutable captured inputs; station_reference: separate C6 snapshot.,6
+01_fetch_data.ipynb,11,Inspect provenance and scoped station evidence,source_inventory: payload inventory; C6 table: contemporary rolling-24h comparison.,3
+01_fetch_data.ipynb,13,Run raw checkpoint and show source clocks,"raw_validation: technical checks; source contract: nominal timing, not observed release records.",4
+02_prepare_data.ipynb,3,Locate the exact project,"ROOT, BASE, PROJECT_NAME: project paths; no scientific inputs.",36
+02_prepare_data.ipynb,5,Construct source-aware daily tables,daily: full anchored calendar; join_audit: one-to-one join and no-fill accounting.,4
+02_prepare_data.ipynb,7,Create source/window features,X: calendar-lag inputs; specifications: exact 12 sets; eligible: common dates after quality/maturity rules.,4
+02_prepare_data.ipynb,9,"Check missingness, source clocks and exact cohort",dataset_validation: current checker proof; missing_decisions/cohort_ledger: explicit fill/drop rationale.,5
+02_prepare_data.ipynb,11,Export purged partitions and build the audit store,handoff: shared checker/export/coverage/database outputs; CV audit: fitting cutoffs before validation issues.,5
+02_prepare_data.ipynb,13,Inspect coverage before modeling,row_inclusion: calendar eligibility; feature_availability: nominal vs observed evidence.,3
+03_analyse.ipynb,3,Locate the exact project,"ROOT, BASE, PROJECT_NAME: project paths; no scientific inputs.",36
+03_analyse.ipynb,5,Describe the verified modeled series,"daily: preserved profiles; annual/monthly: descriptive summaries, not station violations.",5
+03_analyse.ipynb,7,Interpret severity without overclaiming representativeness,annual/monthly summaries use full available modeled days; calendar denominators are explicit.,4
+03_analyse.ipynb,9,Inspect fire-source limitations and one-receptor scope,Spatial evidence and modeled episodes are diagnostic only; no parameter or mask reselection.,3
+04_model.ipynb,3,Locate the exact project,"ROOT, BASE, PROJECT_NAME: project paths; no scientific inputs.",36
+04_model.ipynb,5,Verify the locked modeling inputs,X/specifications/eligible: immutable design inputs; Ridge alpha and HGB grid are fixed.,5
+04_model.ipynb,7,Inspect partition and answer-free interface,B0: persistence; B1: provider reference; C0: warning-only majority; test_feature_columns: no answer columns.,5
+04_model.ipynb,9,Fit and lock without test-label selection,forecast_plan: frozen source/data/model identities; tuning: training-CV and validation results.,3
+04_model.ipynb,11,Commit forecasts before scoring,prediction_receipt: current lock/prediction hash; sql_commitment: answer-free database write.,4
+04_model.ipynb,13,Check committed coverage before reading answers,committed: predictions and identity keys; no test outcomes.,4
+04_model.ipynb,15,Evaluate all locked settings on matched dates,scores: MAE/RMSE/warning metrics; comparisons: paired uncertainty; diagnostic_evidence: fixed secondary analyses.,4
+04_model.ipynb,17,Display all primary results without reselection,mae_matrix and test score rows are descriptive; validation selection stays frozen.,5
+04_model.ipynb,19,Answer all twelve questions and conditional additions,comparisons: exact matched-day deltas; twelve_answers: H1a-H4c; window_selection: validation only.,3
+04_model.ipynb,21,Inspect failure modes without test-driven changes,missed_day_details: FN events; learner/block sensitivity: fixed secondary checks.,4
+04_model.ipynb,23,Review C4/C6 and the availability gate,Station/spatial/gate artifacts have distinct scopes; none are hidden model predictors.,3
+04_model.ipynb,25,Verify and render one consistent report,report_evidence: science/SQL proof; documents: report/proposal generated from this run.,6
+04_model.ipynb,27,Package current saved evidence,"candidate_zip: current archive; execution_evidence: actual saved outputs, not a promise.",3
+04_model.ipynb,29,Optionally verify real Colab exports,"SEAL_COLAB_EXPORTS: optional user-controlled export check, False for local automated execution.",36

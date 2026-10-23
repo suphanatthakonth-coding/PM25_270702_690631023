@@ -1,0 +1,38 @@
+[
+  {
+    "name": "model_v2_5_complete.ipynb",
+    "path": "C:\\Users\\User\\Downloads\\model_v2_5_complete.ipynb",
+    "sha256": "483ea4c8c697ad8c5a892e6703413360bc1e80995d346e3a6391302fd95d133e",
+    "cells": 21,
+    "code_cells": 19,
+    "stored_errors": 0,
+    "selected_source_characters": 41534
+  },
+  {
+    "name": "fetch_data (1).ipynb",
+    "path": "C:\\Users\\User\\Downloads\\fetch_data (1).ipynb",
+    "sha256": "337f6aac1d93b6d61c91b96710010007605259f649b335f802d2c0200a6bf62e",
+    "cells": 40,
+    "code_cells": 20,
+    "stored_errors": 0,
+    "selected_source_characters": 25506
+  },
+  {
+    "name": "prepare_data.ipynb",
+    "path": "C:\\Users\\User\\Downloads\\prepare_data.ipynb",
+    "sha256": "f6b73180b6f74e49cabee326c026393fe5ffc5cfe924346d812f3abefb0b8acb",
+    "cells": 47,
+    "code_cells": 26,
+    "stored_errors": 0,
+    "selected_source_characters": 28329
+  },
+  {
+    "name": "analyse.ipynb",
+    "path": "C:\\Users\\User\\Downloads\\analyse.ipynb",
+    "sha256": "7cf678791393720c8a79ab02632d8447e676aa31eff382d94dce79bb6ec5a27f",
+    "cells": 28,
+    "code_cells": 16,
+    "stored_errors": 0,
+    "selected_source_characters": 18006
+  }
+]

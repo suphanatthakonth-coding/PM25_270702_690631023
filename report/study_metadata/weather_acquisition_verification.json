@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "real_public_weather_requests": 2,
+  "checked_hourly_rows": 17544,
+  "source_sha256": "00796c5f081ac60b8f31675fc1fe1eb8d63aaf5ac29cfd0861c85f1b229f4272",
+  "comparisons": [
+    {
+      "file": "weather_previous_full_2024.response",
+      "scientific_hourly_values_identical_to_frozen_capture": true,
+      "raw_bytes_identical": false,
+      "note": "Different metadata bytes are allowed; the new response never replaces frozen study input."
+    },
+    {
+      "file": "weather_previous_full_2025.response",
+      "scientific_hourly_values_identical_to_frozen_capture": true,
+      "raw_bytes_identical": false,
+      "note": "Different metadata bytes are allowed; the new response never replaces frozen study input."
+    }
+  ],
+  "frozen_study_not_changed": true,
+  "historical_public_release_certified": false
+}

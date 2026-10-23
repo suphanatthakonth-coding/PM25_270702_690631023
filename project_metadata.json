@@ -1,0 +1,8 @@
+{
+  "project": "Chiang Mai PM2.5 Forecasting",
+  "student_id": "690631023",
+  "subject": "270702 Data Science Programming",
+  "study_contract": "next_day_0700_thai",
+  "scope": "Retrospective comparison of four source groups and three history lengths.",
+  "model_development_evidence": "reference/initial_benchmark; reference/model_development_trace.csv"
+}

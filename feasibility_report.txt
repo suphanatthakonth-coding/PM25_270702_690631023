@@ -1,0 +1,24 @@
+PROJECT-OWNED DATASET CHECKER
+Verdict: FEASIBLE WITH ISSUES
+Scope: qualified retrospective benchmark only; not an operational-availability PASS.
+Technical status: PASS
+Temporal cutoff status: PASS
+Common daily rows: 687
+Original historical public release/revision not certified; operational mode blocked.
+PASS: full_calendar_including_buffers: 739 calendar rows; no compressed-day lagging.
+PASS: tomorrow_after_issue_target: History anchor =D-1; issue=D07; target=D+1, hence anchor+2.
+PASS: issue_and_target_clock: 07 Thai issue; target starts17h and ends41h later.
+PASS: target_41hour_finish: Label completion distinct from public availability.
+PASS: unknown_targets_never_safe_labels: Unknown labels retain NA.
+PASS: all_declared_calendar_lags: 84 exact columns; metadata and provider reference are excluded from learned features.
+PASS: all_twelve_exact_feature_contracts: Every source/lag set independently reconstructed.
+PASS: shared_cohort_exact: Same max-window source/date eligibility for all12settings.
+PASS: row_ledger_retention_matches_eligibility: No excluded row may be labelled retained, including missing provider references.
+PASS: minimum_500_common_days: 687
+PASS: fire_source_specific_day: Latest GFAS day at issue D07 is nominal UTC D-2, not D-1.
+PASS: fire_log_and_native_fraction: Area-weighted density integration; no hotspot-count substitution.
+PASS: finite_or_explicit_missing: NaN is missing, never infinity or false zero.
+PASS: all_column_missing_accounting: Every column has numerator/denominator, including zero-missing columns.
+PASS: outer_label_maturity_train: train labels complete before firstvalidation issue.
+PASS: outer_label_maturity_validation: validation labels complete before firsttest issue.
+UNVERIFIED: historical_publication_and_revision: Exact historical public-release/revision audit is unverified; temporal-cutoff checks are reported separately. Operational use remains blocked.

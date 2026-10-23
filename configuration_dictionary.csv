@@ -1,0 +1,38 @@
+variable,value,reason
+study_contract,"""next_day_0700_thai""",Fixed study identifier for the 07:00 Thai next-day retrospective forecast contract.
+start_date,"""2024-01-01""","Use the first of two full calendar study years; keep unavailable early weather histories as missing, not zero."
+end_date,"""2025-12-31""",Use the last full 2025 year of this fixed GFAS v1.2 study; do not mix the later product generation or partial 2026.
+history_calendar_start,"""2023-12-24""","Eight local-day buffers allow the maximum seven-day history before the first target, with a two-day anchor-to-target shift."
+history_calendar_end,"""2025-12-31""",Retain all source days through year end; out-of-study/unknown future labels stay explicit and are not modeled.
+latitude,18.7883,Retain the original Chiang Mai receptor; the actual returned PM/weather grids are audited separately.
+longitude,98.9853,Retain the original Chiang Mai receptor; do not invent a second independent site from a regional fire box.
+timezone,"""Asia/Bangkok""",Aggregate PM/weather on Thailand local days; UTC fire intervals remain explicitly different.
+operational_issue_time_local,"""07:00""","Approved 07:00 local issue predicts the next local day, 17h before start and 41h before completion; operational proof remains unverified."
+pm_source,"""CAMS operational forecast archive, fixed 12 UTC vintage""",Fix forecast run/vintage/lead identity instead of treating a current archive series as measured station truth.
+weather_source,"""Open-Meteo gfs_global previous_day1 forecast history""",Use archived forecast offsets instead of future-completed ERA5 reanalysis; offset metadata is not observed public-release time.
+fire_source,"""GFAS v1.2 UTC daily analysis""",Use the reviewed GFAS daily analysis and source-specific latency; do not interpret it as FIRMS hotspot counts.
+firms_bbox,"""97.0,17.5,101.0,21.0""","Retain the existing regional extent for fire context; the legacy key name now holds the GFAS bounding box, not a second PM receptor."
+min_valid_hours,24,A daily PM/weather value requires every one of the 24 expected hourly samples; no interpolation or target filling.
+seed,42,Preserve seed 42 for learner/bootstrap reproducibility; it was not selected for a favorable test result.
+windows,"[3, 5, 7]",Compare exactly 3/5/7-day histories within each H1-H4 source group on the same maximum-window cohort.
+train_target_end,"""2024-09-29""",End mature training targets on 29 Sep 2024; the 30 Sep target is not complete before the first validation issue.
+validation_target_start,"""2024-10-01""",Begin the fixed Q4 validation period after the outer label-maturity boundary purge.
+validation_target_end,"""2024-12-30""",Use validation labels only through 30 Dec 2024; the 31 Dec label is not complete before the first test issue.
+test_target_start,"""2025-01-01""",Test a full untouched-in-the-new-fit calendar year after training/validation; previous exploration is still disclosed.
+outer_label_purge_target_days,"[""2024-09-30"", ""2024-12-31""]",Remove these two boundary labels before next-phase selection/refit because the target day is not yet complete at the next issue.
+inner_splits,3,Three expanding training-only TimeSeriesSplit folds; never use test scores to tune parameters.
+cv_gap_calendar_days,1,Keep a one-calendar-day gap and independently verify every training label completes before the first validation issue.
+warning_threshold,37.5,Use the lab fixed 37.5 ug/m3 threshold (>37.5); do not optimize the warning cutoff on test.
+block_days,14,Preserve the declared primary 14-day moving-block interval to reflect serial dependence; not a test-selected block size.
+bootstrap_repeats,1000,"Use the fixed 1000 bootstrap repetitions with seed 42; pointwise exploratory intervals, not multiplicity-adjusted confirmation."
+primary_family,"""ridge""",Ridge remains the prespecified primary learner; validation alone selects its source/window setting.
+model_families,"[""ridge"", ""hgb""]",Keep Ridge and secondary HGB with their existing grids; do not promote a learner because its test score looks better.
+bootstrap_sensitivity_days,"[7, 14, 28]",Show 7/14/28-day sensitivity without replacing the declared primary block after inspecting outcomes.
+prediction_mode,"""retrospective""",Qualified historical replay only; a successful interface test does not certify public availability or deployment.
+data_previously_explored,true,Explicitly disclose earlier inspection; answer-file separation cannot restore a genuinely unseen holdout.
+advisory_start_utc_day,"""2024-08-09""",Start of the documented source advisory; quarantine dependencies conservatively without asserting Chiang Mai contamination.
+advisory_end_utc_day,"""2024-08-14""",End of the native UTC advisory interval; propagate dependency exclusions to targets/history before scoring.
+advisory_policy,"""Conservative all-region date-dependency quarantine; does not assert local contamination.""","Use one fixed common dependency mask across all 12 settings, preserving raw values and avoiding outcome-based exclusions."
+fire_offsets_from_issue_days,"[2, 3, 4, 5, 6, 7, 8]","At issue D07 local, use UTC fire days D-2 through D-8 for the maximum window under the nominal next-day schedule."
+earth_radius_m,6371008.8,"Use the fixed spherical Earth mean radius in cell-area integration; W/m2 times m2 gives W, then divide by 1e6 for MW."
+source_availability_scope,"""Nominal-release-constrained retrospective benchmark; actual historical publication/revision not certified.""",Distinguish nominal timing from verified historical publication/revisions; operational use stays blocked.

@@ -1,0 +1,9 @@
+{
+  "calendar_days": 1341,
+  "common_days": 861,
+  "retention_percent": 64.20581655480984,
+  "shared_calendar_positions": 245,
+  "longest_exceedance_episode_days": 16,
+  "global_intervals_30_minutes_or_less_in_calendar": 35,
+  "interpretation": "Common-cohort comparisons isolate source/window changes but condition on quality availability; no province-wide or all-calendar skill claim."
+}

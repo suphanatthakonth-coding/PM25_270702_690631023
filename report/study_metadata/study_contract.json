@@ -1,0 +1,20 @@
+{
+  "status": "LOCKED_BEFORE_NEW_FITTING",
+  "locked_at_utc": "2026-10-21T21:56:06.872313+00:00",
+  "scope": "Retrospective benchmark with documented nominal release bounds; not certified historical operational replay.",
+  "primary_eligible_period": "Value-complete days 2024-01-28..2025-12-31 minus declared advisory dependencies; no outcome-based period choice.",
+  "issue": "D 07:00 Asia/Bangkok = D 00 UTC",
+  "target": "P(D+1), local 00..24; hourly mean at fixed ADS point.",
+  "PM": "P(d) from run d-1 12 UTC, leads5..28; P(D-1)..P(D-k).",
+  "weather": "Previous_day1 forecast values aggregated on local days D-1..D-k, with rain intervals assigned by their start.",
+  "fire": "GFAS UTC mean days D-2..D-(k+1); density-based mean power and positive-analysis-area fraction, not hotspot count.",
+  "nominal_bounds": "CAMS12 UTC by22 UTC; GFAS day s by(s+1)07 UTC; weather fixed24h offset metadata. Exceptions remain explicit.",
+  "quarantine": "Any target, PM/weather history or GFAS input whose relevant native valid dates overlap9..14Aug2024 is flagged conservatively before fitting; source-to-target dependency ledger controls exclusions.",
+  "split_rationale": "Whole calendar2025 test includes all seasons; validation2024Q4; earlier training. Boundary labels2024Sep30/Dec31 not yet mature before next phase and are purged.",
+  "selection": "Training-only chronological CV; primary Ridge group/window selected only on validation. HGB secondary; never promote the best test setting.",
+  "target_minimum_rows": 500,
+  "operational_use_allowed": false,
+  "original_release_certified": false,
+  "rationale_for_retrospective_execution": "New native runs and complete values permit a truthful retrospective source-clock comparison; unresolved availability is not converted into a PASS or fabricated timestamp.",
+  "preserved": "Baseline algorithms/grids, scaling pipeline, warning threshold, bootstrap design, four-notebook structure and report styles; only incompatible source/time/quality dependencies change."
+}

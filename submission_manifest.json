@@ -1,0 +1,2216 @@
+{
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 9,
+      "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 79,
+      "sha256": "b45110efc335e7a023b74bd39fe8643d76ee71fe538c05f90ee1426d69d83257"
+    },
+    {
+      "path": "01_fetch_data.ipynb",
+      "bytes": 94293,
+      "sha256": "ba7545b95fb9ca06173358006198b5240f25db4bb81d88101b2a4f5fa1612272"
+    },
+    {
+      "path": "02_prepare_data.ipynb",
+      "bytes": 223859,
+      "sha256": "f2a993bbf2e8b18d4a4a993a2f7ee40a46037c8fbd45b7b939e55da8b4679220"
+    },
+    {
+      "path": "03_analyse.ipynb",
+      "bytes": 462860,
+      "sha256": "4f29bc0c288cd84507a9d54858d1281d4029cfb5f39b6d956307aa2abe0bee94"
+    },
+    {
+      "path": "04_model.ipynb",
+      "bytes": 426297,
+      "sha256": "da1168b10a6d72a97ea878f17752a6b23a4579cb20902ecf985fa636f9d0c1ee"
+    },
+    {
+      "path": "analysis_plan.json",
+      "bytes": 4291,
+      "sha256": "d139f7361cac2473dcecafa0dd92b968b1c5690e73e2781ea6440e47d7dd3c54"
+    },
+    {
+      "path": "config.json",
+      "bytes": 1716,
+      "sha256": "d9833138ccff11392b7be0e9f233b39bc0d4807cf0edc42d0e9d58cb67d9c26d"
+    },
+    {
+      "path": "configuration_dictionary.csv",
+      "bytes": 5652,
+      "sha256": "4e39d6247fff20fa33ed9b49f9818fa2609faa68ad4289e59b061870a063a727"
+    },
+    {
+      "path": "data/interim/gfas_daily_derived.csv",
+      "bytes": 64217,
+      "sha256": "3a1b4a4f0682764e5a3137527c71f61d5641bb9725adf26298af8c23081e28bb"
+    },
+    {
+      "path": "data/interim/native_exports/field_metadata.json",
+      "bytes": 33525968,
+      "sha256": "3b912fed4ead89320d9af06bef40dc8eece299deb5e744e5de8c33ac47ee4b83"
+    },
+    {
+      "path": "data/interim/native_exports/pm_hourly.csv",
+      "bytes": 6200783,
+      "sha256": "f6e47030075a0f50a17ca147b54d9aac628709c1a2330989016fa69c80f16709"
+    },
+    {
+      "path": "data/interim/native_exports/pm_profiles.csv",
+      "bytes": 185364,
+      "sha256": "f1976d8070fd7da2df81ab2a649e289207ec6c3c039d2578a88097d9d7f15d9b"
+    },
+    {
+      "path": "data/interim/source_exports/crosscheck_20261016T142135Z/cams_35t_hourly_derived.csv",
+      "bytes": 1875,
+      "sha256": "375fc626f7d884c5bbcfe61d2c324e2eb98c8e4d29ef1b5236c7b99bc30128f1"
+    },
+    {
+      "path": "data/interim/source_exports/crosscheck_20261016T142135Z/cams_36t_hourly_derived.csv",
+      "bytes": 1875,
+      "sha256": "375fc626f7d884c5bbcfe61d2c324e2eb98c8e4d29ef1b5236c7b99bc30128f1"
+    },
+    {
+      "path": "data/processed/all_seven_day_features.csv",
+      "bytes": 964730,
+      "sha256": "87c1374c26ae4b936c352869a2e97081cb296c2a916d3c4d7fb68d47e1dce9d2"
+    },
+    {
+      "path": "data/processed/dataset_metadata.json",
+      "bytes": 381,
+      "sha256": "0e8103c199076022109a150e2782747e9aab4640f8eed16f2a3d7fca7663251d"
+    },
+    {
+      "path": "data/processed/evaluation_inputs/cv_indices.json",
+      "bytes": 6049,
+      "sha256": "141b20f4a1058df0ed3377046ca1abf5daa0ead5e29b0794e97236b8ddd2ee74"
+    },
+    {
+      "path": "data/processed/evaluation_inputs/input_contract.json",
+      "bytes": 517,
+      "sha256": "481bbfbd2eb490321ff0cd34718cbe83481caa0026b0b13a89cca0e421678dcd"
+    },
+    {
+      "path": "data/processed/evaluation_inputs/test_answers.csv",
+      "bytes": 15177,
+      "sha256": "3ca616dc51d13857f3ddb96e81a1ecae4dbf91d2b707d341f0db4667ebf19d01"
+    },
+    {
+      "path": "data/processed/evaluation_inputs/test_features.csv",
+      "bytes": 513751,
+      "sha256": "b692da10a9e3e53125016844bb7c31f59c8bc1431bfeffed3ee2681e4f04cf14"
+    },
+    {
+      "path": "data/processed/evaluation_inputs/train.csv",
+      "bytes": 332891,
+      "sha256": "3fa2a973bf48ad4f2a37d1ef70c50d2b3723c4b6d41921aeb0c6899aa25c562d"
+    },
+    {
+      "path": "data/processed/evaluation_inputs/validation.csv",
+      "bytes": 129695,
+      "sha256": "d4db0cad376f6982f662d447d40946170a9578933b7b45673c4bc68094ec2bcf"
+    },
+    {
+      "path": "data/processed/final_dataset_daily.csv",
+      "bytes": 296185,
+      "sha256": "3f4d094898e8cbac13c87da3cc537d7f0ac2c15bf4bcf1129b6eb07487fdbf94"
+    },
+    {
+      "path": "data/processed/reference_store.sqlite",
+      "bytes": 806912,
+      "sha256": "0cf8f83523bfb3f76059d475c1c6959fd1bf679e0d878b3d0fdb88b616ca8645"
+    },
+    {
+      "path": "data/raw/crosscheck_20261016T142135Z/air4thai_snapshot.json",
+      "bytes": 134449,
+      "sha256": "863a99c7466e1183157f6c905b8eb48f82c6d2151aaccfd984e38e016309775b"
+    },
+    {
+      "path": "data/raw/crosscheck_20261016T142135Z/cams_35t_hourly.json",
+      "bytes": 1973,
+      "sha256": "910456f74068e81aa4ea46f716a11833b5c2300f120a5f9102b356d2228a845c"
+    },
+    {
+      "path": "data/raw/crosscheck_20261016T142135Z/cams_36t_hourly.json",
+      "bytes": 1973,
+      "sha256": "90260a62dc231ab0a6745acdfcdb90ccb2a9835b2f2c92ad1d32e17254effb91"
+    },
+    {
+      "path": "data/raw/crosscheck_20261016T142135Z/manifest.json",
+      "bytes": 1946,
+      "sha256": "810180aca1a7be5b0f490154acf501a393c49bd7b19622001b6f5313e25ef7f6"
+    },
+    {
+      "path": "data/raw/selected_run.json",
+      "bytes": 42,
+      "sha256": "34228102930b03b0532ff665b2b60d64d784e4c01df030fe2a2fc44716ff0f3f"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/acquisition_lock.json",
+      "bytes": 190,
+      "sha256": "565e730f50f460fd9360df859a2a40dda50929707a34a3b0c51fba783b8e3c18"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/acquisition_summary.json",
+      "bytes": 698,
+      "sha256": "e9b82b5bee77dd51238385686f8f84bc229d7bff7332ca9f8968c0221b08d1a7"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/ads_full_acquisition.py",
+      "bytes": 50839,
+      "sha256": "fe5152532ac99df8a796df999b81974d42664eba0e784139922e729396232660"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/download_ledger.csv",
+      "bytes": 2765,
+      "sha256": "50e77606a4b81394e2d5f593a599b60dd1adabcfaf6cb3cda91a252df4bfafd3"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/field_metadata.json",
+      "bytes": 32198655,
+      "sha256": "ba147dba5d23c86472abcb502a2490899e77d6c370b901979f14cc247ef574d4"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2023-12/job_state.json",
+      "bytes": 1212,
+      "sha256": "200b0412f5a61b04a100c4543039a1eabbef1afb5fe5c168953ea9da3389a1b7"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2023-12/qc.json",
+      "bytes": 16422,
+      "sha256": "f67dd9f271240a1067ce5266351ccf46f22f81f7b06c9a5faba18a2eb44a0b57"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2023-12/raw.grib",
+      "bytes": 90144,
+      "sha256": "00915f0d2b682d4b59716a1d6d7f104c647e3b3ace083345e541d1263aa303ca"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2023-12/transfer_receipt.json",
+      "bytes": 1176,
+      "sha256": "9c48434caa8831b407363ab3f0f295e48380797f5277bdd4f9606b458186fd5a"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-01/job_state.json",
+      "bytes": 1652,
+      "sha256": "d6623ef393edb6e0cd8ab6ec1a96ab81ae658bbba9bb762be743d8b05eb66c7c"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-01/qc.json",
+      "bytes": 55637,
+      "sha256": "310f8e31c2f9699c1b053c0eabe1cb8526c8095ab2cc49c9fad2178af1a51fa8"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-01/raw.grib",
+      "bytes": 310496,
+      "sha256": "91f9ba5e0276cf9711ec72caae448ee8db4725025cd8f4981a8b830932d7e345"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-01/transfer_receipt.json",
+      "bytes": 1617,
+      "sha256": "1539ac9de440cc6c70bdcdc5e2c61e509facf718fec2ff72de594a7206cbc743"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-02/job_state.json",
+      "bytes": 1612,
+      "sha256": "69a1c60caae2247628ad2fac19cd3c26dd7276c637253d3849cb81bc1c36247b"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-02/qc.json",
+      "bytes": 52088,
+      "sha256": "ae3cf2dbf2ad13094da65a30d459becc4f738cdd455c503e6118a7fb1b730c32"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-02/raw.grib",
+      "bytes": 290464,
+      "sha256": "6ff89906bc81da6400ab765e47667137e66285e50bf1348b8f5ea4a09c77d30f"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-02/transfer_receipt.json",
+      "bytes": 1577,
+      "sha256": "0c4a591ab7d51372a99b39f5cbeb5fc7e96a2d428b9a1f1462bd580541f621dd"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-03/job_state.json",
+      "bytes": 1652,
+      "sha256": "adaa9c6111956eaeecb1a7cda8ae070e987ff896c48211f86f530279728912a1"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-03/qc.json",
+      "bytes": 55659,
+      "sha256": "ac4728d783a1faecdc13d4d438383a19d380bb268b35b7137cc8a3ca69a87cd8"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-03/raw.grib",
+      "bytes": 310496,
+      "sha256": "4a2ab82a5667a4d01577324c78d7eeb76853654fdafb749bf5c6fa6ca97d72f3"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-03/transfer_receipt.json",
+      "bytes": 1617,
+      "sha256": "9bf2ee581d8658ca2eff0097f1a1ea8e142a64dfb3c7665e2bd17431b9da4e33"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-04/job_state.json",
+      "bytes": 1632,
+      "sha256": "929a601ccb9b9d97e4852e3d8bf140e279315b2d654bcdf3b5ec352cb6f354c1"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-04/qc.json",
+      "bytes": 53866,
+      "sha256": "c2795db79fda0159a60968f3938ac4f00107e9074a936a8a50204e6d3b86359a"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-04/raw.grib",
+      "bytes": 300480,
+      "sha256": "77d5c4ca96bc896ce9d878af33743606ee571bc9a48ce392d5fc60528ead4a1d"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-04/transfer_receipt.json",
+      "bytes": 1597,
+      "sha256": "1783145d93a490abdbeae5c2ee5f5910d4fb549419e50130838a45c4fd8f95d3"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-05/job_state.json",
+      "bytes": 1652,
+      "sha256": "57fb6670be2edb50c94418915fb0bf89b430b2127d9c0656bc81e411d9f5e2ba"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-05/qc.json",
+      "bytes": 55525,
+      "sha256": "4d09a56c2397607fb700f8670df198802f9f91c83e1593b0e42ef0279dbe8f15"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-05/raw.grib",
+      "bytes": 310496,
+      "sha256": "5f2406de23f2a3f4224ed79234bae218cd6731298892d93389e47a8b0ec6aa54"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-05/transfer_receipt.json",
+      "bytes": 1617,
+      "sha256": "6ff433847d3449c46ab38a88a4bfefd1bad221210afe84527787fa0719bc5ff7"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-06/job_state.json",
+      "bytes": 1632,
+      "sha256": "48028faa47883b34c8bfe3790452d1a68eaf813607f028a51b1aa3f8b8d59511"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-06/qc.json",
+      "bytes": 53556,
+      "sha256": "64634ce21fa8fd0ef6ca67f4a1a4d996711818e28c4816496e355478fb4be883"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-06/raw.grib",
+      "bytes": 300480,
+      "sha256": "913c117e07865bd303f1a3a1db41fba6e78bfdd4e6ba04523d8c9306457cd24d"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-06/transfer_receipt.json",
+      "bytes": 1597,
+      "sha256": "93646af6f1d9d875d9eb1c3a0efe26b0b9924aefdbbaa2a060d0210551ab696b"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-07/job_state.json",
+      "bytes": 1652,
+      "sha256": "0ce2eab3cd2049c4680ce56f9888bc15bee4543e4311b006037c91a1a0f0b79e"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-07/qc.json",
+      "bytes": 54968,
+      "sha256": "0dd7000307c0aa0f2b0413c96347a9ac95249194c7ada6a37ec3748ef84a6ff5"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-07/raw.grib",
+      "bytes": 310496,
+      "sha256": "84c08883b967dc8e6f9f7311b1ab67dbd89d4cf7dcc2c4a75ba605043d1964c9"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-07/transfer_receipt.json",
+      "bytes": 1617,
+      "sha256": "6a4e159f66f5c501565d68bf6e92f6f5f13d1e5aa23fbf9b66ad160e118473e7"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-08/job_state.json",
+      "bytes": 1652,
+      "sha256": "27b1c72bd13b62250900e6e0e5241f945a4d8ca336f4331befe812efd13c4e0a"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-08/qc.json",
+      "bytes": 55078,
+      "sha256": "626af0ac81c780b0078c9b4294ed5bfbc099e7fbb5b5a0f911d12e5837d60241"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-08/raw.grib",
+      "bytes": 310496,
+      "sha256": "47c421aa375511ad86b8e9f019237856b4ac1085dd19a832820b319f913011ad"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-08/transfer_receipt.json",
+      "bytes": 1617,
+      "sha256": "a0b987b97416c69218f3e0826c2c75d05d775cda24b9578d4721d7819b8969d4"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-09/job_state.json",
+      "bytes": 1632,
+      "sha256": "d5ebc41e611a3f820cd13635d89185b944d6ebe5fcfa7f6f732619b129ad8970"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-09/qc.json",
+      "bytes": 53456,
+      "sha256": "5cde7fc799c0f394b4fc5d8fbb440f7cccba649c4de0cf7af81935626144ff8d"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-09/raw.grib",
+      "bytes": 300480,
+      "sha256": "99457c2d679d4ac29dcf711c91bb98ec7f15908057039f1bc9f380ece9f3f1f4"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-09/transfer_receipt.json",
+      "bytes": 1597,
+      "sha256": "c5c48bad0ec1d0a6f25c01f011124700bf8813bf3c6e021528f424b40406fe00"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-10/job_state.json",
+      "bytes": 1652,
+      "sha256": "4da9ce12e641d3483a9b430f67829bac7eeeee914bc2b9b4cc7a5b0da731c574"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-10/qc.json",
+      "bytes": 55323,
+      "sha256": "ea3426ae1b89d28f1b44c193f0db73b8446f454415c15a7ca5e61f2e8adc02cb"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-10/raw.grib",
+      "bytes": 310496,
+      "sha256": "4a267b6d4082fd3c8a69b56fa3fc95eb4bcb53179b4a92ce1ebe7459817e63b8"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-10/transfer_receipt.json",
+      "bytes": 1617,
+      "sha256": "92359bcc32e0fd2b61b172ad8775dd751a26c71c91d6d54cb1724a2fc96ce998"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-11/job_state.json",
+      "bytes": 1632,
+      "sha256": "ee031e6333c22b4e003cc9a773cb22a5e2c7463b61cce6e821eb7a1590ad54d5"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-11/qc.json",
+      "bytes": 53730,
+      "sha256": "c317bb66306a4426e3219f8832b53583bf130b5626c32e1fc7802d6c47ce39f3"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-11/raw.grib",
+      "bytes": 300480,
+      "sha256": "4a3d5163459a21888484d93c82dd3ab182ebc95e20acbabd81faaf8a9c23fb5e"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-11/transfer_receipt.json",
+      "bytes": 1597,
+      "sha256": "f8728af76952fc4ff32a03be3eb42795cfdb64bb9d70038e2b30f6fffdb82435"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-12/job_state.json",
+      "bytes": 1652,
+      "sha256": "0fd1f42edbd87f0ba6c77653b2b98bafa2f1051e32778ad75108934d6fb22b02"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-12/qc.json",
+      "bytes": 55492,
+      "sha256": "6693bd7dbd782084ba00d8d9fd1c0347b29f2eb4659f3c983bafe481fc307918"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-12/raw.grib",
+      "bytes": 310496,
+      "sha256": "ddda90f964c01fb99c4810f85718df3acb769e44efe549dccea39f28537d86c4"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2024-12/transfer_receipt.json",
+      "bytes": 1617,
+      "sha256": "647fc1d34c7602afb2eb2da612e919c49a4615790317fb86a500057c80cd3e6a"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-01/job_state.json",
+      "bytes": 1652,
+      "sha256": "81041afef4ab62d84937b468199d74c12dd256e24a995499404941bb13504244"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-01/qc.json",
+      "bytes": 55629,
+      "sha256": "a4d918f4ec780274b310ebde9b2a8b3b924180958e0431b9d8abc474bbbc182c"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-01/raw.grib",
+      "bytes": 310496,
+      "sha256": "21f8103282577ddd01c36fc0ccf0503a1c3048e88b687c7ca4de8635b8382cf1"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-01/transfer_receipt.json",
+      "bytes": 1617,
+      "sha256": "2f505a94e01490719d68b4cf5ab4333da325601f3b0153af13d65a00b6d528ac"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-02/job_state.json",
+      "bytes": 1592,
+      "sha256": "c10b736421ad00b8643983c5e967e56a0f1d745b6f1fa4924b66d2a53acb43a7"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-02/qc.json",
+      "bytes": 50299,
+      "sha256": "bfc93b63be3e8019de4fe24ef30a19cf6fb7e6628510461dc3d222ee83ffac9d"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-02/raw.grib",
+      "bytes": 280448,
+      "sha256": "728a9b4b403b9457bff97fadb352316149ac2bf4d3d31c27bc5440ec8e4cf001"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-02/transfer_receipt.json",
+      "bytes": 1557,
+      "sha256": "ce878b5f42fda981f621810aa3e62131483c63f03640119995feb2c6df0c31ee"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-03/job_state.json",
+      "bytes": 1652,
+      "sha256": "7254d36a02fecb6e39d2092cebf04a3f65387e7e634d7bb47c069ef6158b1ec0"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-03/qc.json",
+      "bytes": 55651,
+      "sha256": "cdc31a535ebb18357a22bb9a3734cec8671ea9416636b945998334f41987a3ee"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-03/raw.grib",
+      "bytes": 310496,
+      "sha256": "8b4cf83d02d3e2699014433a87352dfd6c16ced4e88d57436470c3a9fc996b8b"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-03/transfer_receipt.json",
+      "bytes": 1617,
+      "sha256": "0f23fba530ad4691586907a4bdd3f6f7e56aa055ce3e9eb2f10eabf2d5b9d9f5"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-04/job_state.json",
+      "bytes": 1632,
+      "sha256": "bfff5a5b5fa0dfbcd72c9014c5339c15acf1112359f6818cec611a26c1dd62d8"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-04/qc.json",
+      "bytes": 53863,
+      "sha256": "4b37e156e0f4ac2826bd1f0ee6c7b7890598dc20da6cee5870539f697d97ee82"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-04/raw.grib",
+      "bytes": 300480,
+      "sha256": "25b4223c4e0e427bc2280164a91e003106b9009f0a319b2eeacb0a7c43fab35b"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-04/transfer_receipt.json",
+      "bytes": 1597,
+      "sha256": "ddd3602f71b0ebaf66d57d80f6023b0553aa680ed14fa6e21b3ef32ea5c81dea"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-05/job_state.json",
+      "bytes": 1652,
+      "sha256": "830bd304dfab470c37e7a371e0d4986f25c692cbcd82be369131e0d756512862"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-05/qc.json",
+      "bytes": 55436,
+      "sha256": "f2b82bb647083ba2ec813e64243a4fdcb3fd29bdb1385463ecf81688a5150456"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-05/raw.grib",
+      "bytes": 310496,
+      "sha256": "68ea9d5e9725c7d160f6ad352459f790fe7276b1f60a66574ef1edbab54d4f03"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-05/transfer_receipt.json",
+      "bytes": 1617,
+      "sha256": "ef2128abbe9ec250f22afdb56459b61f9300425336aa64d6868e0563b682b34f"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-06/job_state.json",
+      "bytes": 1632,
+      "sha256": "fff62f290aba14b70c3ee73af935d39a262537143be4dad30ca4bddf3e2b625e"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-06/qc.json",
+      "bytes": 53477,
+      "sha256": "e0de37320fb99d13c0d6bf3c3dc7152557bd2637e4c02687d9d0025c8a16f9fc"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-06/raw.grib",
+      "bytes": 300480,
+      "sha256": "b609a78f0539cef6cf7cbb71f89c25d3416a61dc5022a2a4d88f35f40ea37a43"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-06/transfer_receipt.json",
+      "bytes": 1597,
+      "sha256": "3ca37ed1b3849aeb29bd1fffeadbc8dc1dce56b19e0c8752673be5150405c300"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-07/job_state.json",
+      "bytes": 1652,
+      "sha256": "2473113fbeb122d11d31c8cd619ea37d73316300db22b03b5082a6a660dfcd44"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-07/qc.json",
+      "bytes": 54807,
+      "sha256": "af440b9bc557b6b112a43a463e6abc65228e3ff994699714a63609b0c03753cf"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-07/raw.grib",
+      "bytes": 310496,
+      "sha256": "d676b55ff99ad4c35abe753f911cab9b717e425b5764df5bd632a7c6d8283aae"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-07/transfer_receipt.json",
+      "bytes": 1617,
+      "sha256": "d7af479bab4f697bb1b02d07d8fb72d28733ddab6b98523134c9358865baf5db"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-08/job_state.json",
+      "bytes": 1652,
+      "sha256": "05909c6c99ce409d2727b24c5e791cb5d9963c1b4184eb9f42737f77520efa39"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-08/qc.json",
+      "bytes": 55252,
+      "sha256": "4a94d0d2c15fc1964276651606bbfe1dfa0a50188787668c7eccdd35717396c6"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-08/raw.grib",
+      "bytes": 310496,
+      "sha256": "4f6d49fc426858e68b52b6a94fe7c0cffb9cacae992a3a8e46ed517fcbdd53ff"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-08/transfer_receipt.json",
+      "bytes": 1617,
+      "sha256": "b253fa6b6fb74ece96748d4bc109bd3efd734f5ba78141ee9c4d4b0e31b17019"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-09/job_state.json",
+      "bytes": 1632,
+      "sha256": "e3849b7822c60a4c4fb3d471e8c17f5cab6fa2fd3fb355c70d47927c8530d91c"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-09/qc.json",
+      "bytes": 53498,
+      "sha256": "9f4f3b3880c793b7725fffe68efd34cf4f700227c4df5af3fa0095bcca1f3fc0"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-09/raw.grib",
+      "bytes": 300480,
+      "sha256": "8b9ac2dca07514bae4ab85136453012c9b3bd9d11592401511052ea06998cf28"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-09/transfer_receipt.json",
+      "bytes": 1597,
+      "sha256": "d354d966a6a96a21d655339d9e6fcf7450b6e442c69abafdb95b02a6e47b61df"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-10/job_state.json",
+      "bytes": 1652,
+      "sha256": "83c8f2fe2efc17f7be8b789aefa10f5abf2b6b93a05b5224faa08eb556c2a0c3"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-10/qc.json",
+      "bytes": 55356,
+      "sha256": "8a5dc91269a26a7ea6955357ac060d9c123b700edf33418f8001ea202d0a3dfe"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-10/raw.grib",
+      "bytes": 310496,
+      "sha256": "6df1af3d6979a5212de590269dab17900f214f56c51683370f2a1696480767bb"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-10/transfer_receipt.json",
+      "bytes": 1617,
+      "sha256": "02d9f4c79097d326a85cf7065b817540ce8c93c6197cb76ac10978e68df52001"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-11/job_state.json",
+      "bytes": 1632,
+      "sha256": "d14cb6e29afd9c46425e5daa2e584f1e250abe5ec136a6f40f1fb84b7e7d73df"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-11/qc.json",
+      "bytes": 53536,
+      "sha256": "4deaf6cd37fa1f53dd8d6149fac942300683b040e6674fff8ce3b709b54a58b8"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-11/raw.grib",
+      "bytes": 300480,
+      "sha256": "ac76b3aa1bcf24994eeea69ab70ce3fcab8326b3fae66dc8d33a7554bac85847"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-11/transfer_receipt.json",
+      "bytes": 1597,
+      "sha256": "6a69032bc49d82c6e3cfa0efadeaca7ecc6efec617914239e10e9aa9f5ede2e6"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-12/job_state.json",
+      "bytes": 1652,
+      "sha256": "9566f3103f37863f330879b61dfac98f3be90b595c6aee855e77f8a32c89646c"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-12/qc.json",
+      "bytes": 55576,
+      "sha256": "fc6a5a2228f2381850a9bc8b138f721d981f55d77281b6cbadee5b2f4040ba15"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-12/raw.grib",
+      "bytes": 310496,
+      "sha256": "867943735499d4d6946725e2936a540ebb52f9b326ed78338e96e67efc9ebe31"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/gfas_2025-12/transfer_receipt.json",
+      "bytes": 1617,
+      "sha256": "23361012f37a3cbff5bff3a0045be4f241d00828b3dd1eda4e548e53fd67d4f1"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2023-12/job_state.json",
+      "bytes": 1862,
+      "sha256": "1dc9a666be05ca325367330010ab43c9d9de79b5f2a1adbe237f95a2f71827a3"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2023-12/qc.json",
+      "bytes": 572439,
+      "sha256": "a18da40f3cce3125821a38fc98a7c28fd59ee635aae8688c62b715853842a4f2"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2023-12/raw.grib",
+      "bytes": 62208,
+      "sha256": "7067a338bd5f12fa1b97dd617ffd422e4847cb103086a44ac9fc58a433ab1782"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2023-12/transfer_receipt.json",
+      "bytes": 1826,
+      "sha256": "f954e203fd7ce26aedcb0909640f59a9e0c742462218592fa8ee856ddf14eb4c"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-01/job_state.json",
+      "bytes": 2302,
+      "sha256": "59dc5f2140ec8b10870bc9119257575b731cabe22f6308376ec4e4447e5e1127"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-01/qc.json",
+      "bytes": 1971203,
+      "sha256": "d639ae709637a28d2dfb9437571cf9f9cfd89f6f93aa63f82c670decedaf9312"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-01/raw.grib",
+      "bytes": 214272,
+      "sha256": "49962014f6dbaee91b2b686a777c3ee88ef5731c799c2a83f1b574925039bef6"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-01/transfer_receipt.json",
+      "bytes": 2267,
+      "sha256": "daaf8cb1ea40e343dd9ca9923b7c9b591c8f70c4955e21d3d18fdd5b18429a6e"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-02/job_state.json",
+      "bytes": 2262,
+      "sha256": "47a937c784a1e56b45d2ce8bfa421e187d4112d366f072bb705898fd6df02974"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-02/qc.json",
+      "bytes": 1844090,
+      "sha256": "16f6f5abf1f46368ab135bea16d7278f934780f0763e1a07f23c416378bc1e9f"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-02/raw.grib",
+      "bytes": 200448,
+      "sha256": "dba0eb8905edc9ed6e686ef88086c7aaa279515ffdd9343bb12814fbf572601d"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-02/transfer_receipt.json",
+      "bytes": 2227,
+      "sha256": "5b37c0c15fba5f5b29c809a582db1aa478ce84f1b2c01863c65a2876af5beb1b"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-03/job_state.json",
+      "bytes": 2302,
+      "sha256": "bd4253549ede997334398bf058f3068bb867327543a0e769f0d25d029bcd2b72"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-03/qc.json",
+      "bytes": 1971153,
+      "sha256": "d455bd3a4a9428037a9d77ea1fe2dfa3f1607f1229ff91a992aa26cf1f34cce3"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-03/raw.grib",
+      "bytes": 214272,
+      "sha256": "4ec8827f79185251bcded4c24630d2d637ae5015d2d2afc63e03a79b5ab025ea"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-03/transfer_receipt.json",
+      "bytes": 2267,
+      "sha256": "7e7dea1b5d497d8cda2b742b5d3dac88c473f8266daf7de57910fae6f115aaab"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-04/job_state.json",
+      "bytes": 2282,
+      "sha256": "3d0d899b0192dcf354c53837a49c6fcafa28b301645fe74ceae9293effaf2a23"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-04/qc.json",
+      "bytes": 1907401,
+      "sha256": "99046ef97fd081359b4cebfefa5ab01d508123c81b416090f5aff75f13471de1"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-04/raw.grib",
+      "bytes": 207360,
+      "sha256": "832828887a06a1f91a1b15d8fd7df64dc3c3db3487620b62737d1e8eab35779c"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-04/transfer_receipt.json",
+      "bytes": 2247,
+      "sha256": "ce8da85a88abb11fa1c99fb91523d9d1d870da767dc2771036e4bfc75843f20f"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-05/job_state.json",
+      "bytes": 2302,
+      "sha256": "7d7bccbff67d9ae00b03f756f909a8e67e5c6779aa387c69960158a8e457dd8d"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-05/qc.json",
+      "bytes": 1971083,
+      "sha256": "a2d8a6c60806b65fda0bb0626b90eea028def762fe8f159ef9c80fed420e124b"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-05/raw.grib",
+      "bytes": 214272,
+      "sha256": "6c717f3825feea43d0589ae3f37dfd4cfb49f8f1071a1972b921c511377015d4"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-05/transfer_receipt.json",
+      "bytes": 2267,
+      "sha256": "6c0448bf406c171315e1fb419e708e907168fdf4ee31aacbcdb72b06d04b0294"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-06/job_state.json",
+      "bytes": 2282,
+      "sha256": "39b6f0716300d851eec3cd4c90fcf1e73da1880e2a2ba80fa97214a5a3b081e8"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-06/qc.json",
+      "bytes": 1906852,
+      "sha256": "f1aade5d7c8ec75c3db72d000d7852a191d72d2dc311ba4b41c22fcb5b452ef7"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-06/raw.grib",
+      "bytes": 207360,
+      "sha256": "2b15ff017199ea1ac65209f8d03718fe6277a5f2996d94c1121b4375c693a30f"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-06/transfer_receipt.json",
+      "bytes": 2247,
+      "sha256": "449f2d96721d3c595208de8da8b3385455ea80d2f361b9f2f94918537c1886fb"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-07/job_state.json",
+      "bytes": 2302,
+      "sha256": "5721492b9bbe048d46549a338085e8265406d5ff1e9f392349006de92e819a1b"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-07/qc.json",
+      "bytes": 1970277,
+      "sha256": "7d3c96a8084f68032553c04666c83701860fe9beb13ac53fcbd03fbc03cba7f2"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-07/raw.grib",
+      "bytes": 214272,
+      "sha256": "1c7d8eaefe74efc4e79906cbaead2b51cdd6c42f9d167713f9af3f23a4fd1e96"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-07/transfer_receipt.json",
+      "bytes": 2267,
+      "sha256": "db3275eb9523bb57e9818cb550065212dd6c36d7992d3ad9ec1e105568ea7aa2"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-08/job_state.json",
+      "bytes": 2302,
+      "sha256": "47261c0ca6aaa181dbde09c8329b651097838d9d4bbdb24d02ec38994ea2ef61"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-08/qc.json",
+      "bytes": 1970987,
+      "sha256": "597882c040509ecf0ef6d80a41bca6ca9025278779c6b609e1c05ae4a53dd0d6"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-08/raw.grib",
+      "bytes": 214272,
+      "sha256": "b172336b4ae5838bb56c71f6b97493df204f5cad856ffdeab5dc6bfa81edcb6d"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-08/transfer_receipt.json",
+      "bytes": 2267,
+      "sha256": "ce33ca5f2723f6488fa4ec14258f7549ab41c5750961137f42a4a465e8fa2952"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-09/job_state.json",
+      "bytes": 2282,
+      "sha256": "c23076efc968846d5fff262deea7c05e06b0d33acebe70a119ad9115ae93a9e3"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-09/qc.json",
+      "bytes": 1907334,
+      "sha256": "6588b2b7cd0c829aec08b18371740e083b78cfeb9ae4ac0b0740e801126c84bf"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-09/raw.grib",
+      "bytes": 207360,
+      "sha256": "1228eb9a086ce8078ebd001144623acd449677af395bb64e6c6d3e600b3e0381"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-09/transfer_receipt.json",
+      "bytes": 2247,
+      "sha256": "dada50e6259030c6b0225e83cd716d2c90ba2f2ae474441c408ba4a5d714fdaf"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-10/job_state.json",
+      "bytes": 2302,
+      "sha256": "67b672b2bb598c0ca8e0e99b7c4819e00e641a71f7adb5070d82ecb6a148963d"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-10/qc.json",
+      "bytes": 1970691,
+      "sha256": "0a2ca2b40e3dfdcfbf16cf5f9c82b0d9d8e1a2eea1c64d2c3a42409340740d41"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-10/raw.grib",
+      "bytes": 214272,
+      "sha256": "e562997f49f619186373d73b3fea3f5290feba48ab063e3cf147e68a369117d4"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-10/transfer_receipt.json",
+      "bytes": 2267,
+      "sha256": "5d91f8adbcbacb3ab02746bafcc0a3763176cae17283137fed82823c9b955232"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-11/job_state.json",
+      "bytes": 2282,
+      "sha256": "8901b3147905eb022f7bdcc12a52792afeb6c2eceebfd663d4ce7fd47142b3c7"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-11/qc.json",
+      "bytes": 1907356,
+      "sha256": "49ed9e1a3c7d8a3e3ca38aec65d91d95d9f20717669b283fbccd8c82172f77fe"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-11/raw.grib",
+      "bytes": 207360,
+      "sha256": "dd0d9cd3efb60b00699f02cb2492c8a849eaa8d8644dd8546cafa9dbfe2a2df9"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-11/transfer_receipt.json",
+      "bytes": 2247,
+      "sha256": "c942842e28604d07746e08ab79a691d5c7ccb766ce4cdd68d12d5f2024717d42"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-12/job_state.json",
+      "bytes": 2302,
+      "sha256": "c912b5a3c4bdbd2aed5ee53277b6903f64c4e4435c37c3446081899d4f2c434b"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-12/qc.json",
+      "bytes": 1970715,
+      "sha256": "7ef70c39490adf4e07a61f7a735d475b73db86705c71db233fa5b9703e1acda9"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-12/raw.grib",
+      "bytes": 214272,
+      "sha256": "d1cf3c49dcd54e75e6b893d87193eedeb5801c90a17d677620108b1be3c09573"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2024-12/transfer_receipt.json",
+      "bytes": 2267,
+      "sha256": "36fe2e0234f059739b7be161a512a81ae23e3a38cc7f4cbfb3b95cf7b6f9a88a"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-01/job_state.json",
+      "bytes": 2302,
+      "sha256": "9363934cf33b976c267fe844804f46f4b455962a2f12ed7482168d8c1906792b"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-01/qc.json",
+      "bytes": 1970679,
+      "sha256": "894d29e1248a1392b6fa5b1e11c38da5bd933e0b4dc0816d2ad81200bb6255ca"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-01/raw.grib",
+      "bytes": 214272,
+      "sha256": "39a23c75218c63e95aeaf1d979de655a6f5ac472e67b17c9fd76eb29c757c26d"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-01/transfer_receipt.json",
+      "bytes": 2267,
+      "sha256": "9bb0b077d3a1270104a8d348308cb82030f251da36f15d8cc37bd4eeae9aa150"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-02/job_state.json",
+      "bytes": 2242,
+      "sha256": "9b3cd227efb47961821ef1463e61f7ccba1dd0d2615b9edf9283f75c925ec68c"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-02/qc.json",
+      "bytes": 1779964,
+      "sha256": "0da388c87c801eec64f4d24bf439fa18b552971332fe80cc0381081c531899d1"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-02/raw.grib",
+      "bytes": 193536,
+      "sha256": "bd102063e0675f024afe330a9adb7decac7e6ca9d4816846aa7a0d45e9bfcca3"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-02/transfer_receipt.json",
+      "bytes": 2207,
+      "sha256": "484849f3dfd61d26f5c2f0333b4d85034b245a7d83a9856944ec929242e16fc2"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-03/job_state.json",
+      "bytes": 2302,
+      "sha256": "e5f567e3b5605e64365c9000bf0a8daca7059e6fb190476b6d934a4a5002c42a"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-03/qc.json",
+      "bytes": 1970118,
+      "sha256": "89550578be53039f9132ea1b36739c0818e632be5622164a0ecf8bc7a91cef30"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-03/raw.grib",
+      "bytes": 214272,
+      "sha256": "2f48165c86027c65b97292515a810ca2da31d8d52fa6075d6e95bca5ef05e35e"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-03/transfer_receipt.json",
+      "bytes": 2267,
+      "sha256": "7a722263c5d34613ba7e41d2a67d654fbde3f49d2b7db9f7727b70d107d59a21"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-04/job_state.json",
+      "bytes": 2282,
+      "sha256": "1d449d482893aa3374bce2c4b9d38a738d268ebe3b2792cc962d09da9b95466e"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-04/qc.json",
+      "bytes": 1907207,
+      "sha256": "8b2e613a3696ad890af3408af59d8d62eba36fe0e9bef1ada5c0065c12baa2e8"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-04/raw.grib",
+      "bytes": 207360,
+      "sha256": "79b6d45993d843427a64a945fb45c755739b3859721eb1055af7ff6ae4feb18b"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-04/transfer_receipt.json",
+      "bytes": 2247,
+      "sha256": "e42de6da691daf79bbfb0c67d46406021349597cd137cf5e44f926b4bee4fa5a"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-05/job_state.json",
+      "bytes": 2302,
+      "sha256": "00f9beb7230114ac9674e1c450e8521182e2538a0121738e07e2752aaf4cc1ff"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-05/qc.json",
+      "bytes": 1970761,
+      "sha256": "a5a415163f507bd0c488e7e89862681ca0f2be70d4e4972d702f89d3110f76b3"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-05/raw.grib",
+      "bytes": 214272,
+      "sha256": "6f8f9d14dc68d9402e3e34fad11200227d8b00e182e5d6ed8c0bf60c3268212f"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-05/transfer_receipt.json",
+      "bytes": 2267,
+      "sha256": "99b717cd0a82fa7eda9b91f10b9a281d48673598b69227d515d53d6445e5091e"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-06/job_state.json",
+      "bytes": 2282,
+      "sha256": "80c12b92997c1aa3a392837e44b24fbfd12676f5b4f8d25eadd4b240d4cb0aa7"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-06/qc.json",
+      "bytes": 1906982,
+      "sha256": "3254981a0d7e71ce51a352f2fe84ddd801cf4672d9938e3fa5f0e10b9c456cd7"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-06/raw.grib",
+      "bytes": 207360,
+      "sha256": "20fee1c7eb00525b0af5e69f954c87b5f1adc50d9ef9c9362be5bbbc29638848"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-06/transfer_receipt.json",
+      "bytes": 2247,
+      "sha256": "326d696017378717f013154c742f89cc1953af3a315867f19ba565edecbad687"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-07/job_state.json",
+      "bytes": 2302,
+      "sha256": "4d5a3f19f36c56a3fbed78d4e0c8265fbebd251ec07b8b81692f90d94eb788cc"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-07/qc.json",
+      "bytes": 1970410,
+      "sha256": "51bd6ef48fc3dad9756a2e4e4347ef68a97ec6a93b71195832296884687f5806"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-07/raw.grib",
+      "bytes": 214272,
+      "sha256": "76b4eeb3be4bc7a94f694134d5c3a41c6f9d757fe122da5ed5b45dee7356f8f5"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-07/transfer_receipt.json",
+      "bytes": 2267,
+      "sha256": "a17a209533460c50e92f64d527b0f07965c00afc791c759e97c89398de08c72f"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-08/job_state.json",
+      "bytes": 2302,
+      "sha256": "21dc8c11eb0aa9093548f67e119e089782b3b2de9c85369d771d4b524da60269"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-08/qc.json",
+      "bytes": 1970548,
+      "sha256": "80ce973f221fe4afb6af04e80003c365e216a81322d0fde060ceb427576d50ca"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-08/raw.grib",
+      "bytes": 214272,
+      "sha256": "31ae0c91a72275866e07cc6cdc8bfb29c0bd75b16321d3b9fc4a5f74dce10424"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-08/transfer_receipt.json",
+      "bytes": 2267,
+      "sha256": "3905a9219e61800a948a9e2039a0bb370de1e026fd027f555ab11bd268889a00"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-09/job_state.json",
+      "bytes": 2282,
+      "sha256": "2fe2f0e12b3a37c02b4e22b3c17bb13934748458ef1c7902321808a94853a03b"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-09/qc.json",
+      "bytes": 1906841,
+      "sha256": "e4fad9fd66ee89c8831154b1fcbeeb404f37fcb364eeb0dc7c2633dbaa3d8eb2"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-09/raw.grib",
+      "bytes": 207360,
+      "sha256": "b8353ad946e81d041cca813c816b265eeebf8ae0367ab99508780d52cfa8284c"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-09/transfer_receipt.json",
+      "bytes": 2247,
+      "sha256": "03ee257a1f35116c7538321ab0152eb40f85286aaffb6e45a018f7ede8344229"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-10/job_state.json",
+      "bytes": 2302,
+      "sha256": "c7344af1d87f710e53d1b4b794a65dfe9b619499dc8535846f1c69fb2a387ffe"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-10/qc.json",
+      "bytes": 1970721,
+      "sha256": "b49624185e7f939f1709788db5bbe640ab4b42ebeefa0bfe4413b2593e1260d1"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-10/raw.grib",
+      "bytes": 214272,
+      "sha256": "1f003b73b1f240c2201cf6ab61f2a150b87b105e50d03c533f0f5e6b3ad7a7f8"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-10/transfer_receipt.json",
+      "bytes": 2267,
+      "sha256": "144e1b8f4d85807888d0cbeb52c1707248973d14a26bc87f9af0c04bb94ba10b"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-11/job_state.json",
+      "bytes": 2282,
+      "sha256": "0e32fe3c87d9a885a05ee74dfa12147c0d4bf69591d1edb91723cfd2673ce9b8"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-11/qc.json",
+      "bytes": 1907110,
+      "sha256": "e6532e74e4c00f40039ad33b820506d3ee947306ca1b50cc7a49b2dfb514d1cd"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-11/raw.grib",
+      "bytes": 207360,
+      "sha256": "695a3777bca132d4ba95c455203869793708ac6117ca315832a31f5979732c38"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-11/transfer_receipt.json",
+      "bytes": 2247,
+      "sha256": "6eb21ae72c0775717d548c28d58740836d1683f93c0aa11ac77820b7e46b585b"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-12/job_state.json",
+      "bytes": 2282,
+      "sha256": "86ded22ecb9e05537e079ffcb7d9269e7cc5af725917f80e7a0ff6df731a32d9"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-12/qc.json",
+      "bytes": 1907094,
+      "sha256": "6894a06a9d011d4c1bb790a231361fdd8036985935a3095d638897cc922dda58"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-12/raw.grib",
+      "bytes": 207360,
+      "sha256": "f92d195ce1122d933577831e5d3d53239cbed2bace014a628716d1b672c71d51"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/jobs/pm_2025-12/transfer_receipt.json",
+      "bytes": 2247,
+      "sha256": "4e7361122c0d7c95f95a279a854bd9f45b77ac828b5ae3e267f489106d6377ae"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/manifest.json",
+      "bytes": 22103,
+      "sha256": "f3391c6113a1dbb4b98ba09423cde2d55febbfaf5ce5ae6da7884e373600b3b8"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/plan.json",
+      "bytes": 80096,
+      "sha256": "da24a2da1802acdbd780be08e3b4dcee84742bb843cb6a88383762ca26811721"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/pm_daily_profiles.csv",
+      "bytes": 185367,
+      "sha256": "29700ebc241343818483cc1cc53a4030065f5eb547978192134619f6e3b51920"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/pm_nearest_hourly.csv",
+      "bytes": 6200786,
+      "sha256": "0c5b3a594aede0adda7686b9e35a265e2267f69c7f404c9c64b697f6968b38c3"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/sessions/20261021T200505952093Z.json",
+      "bytes": 432,
+      "sha256": "1532cb103397358ea851a22d01254f269213b2644d2bc2f8aba725533da3738b"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/sessions/20261021T200526182722Z.json",
+      "bytes": 432,
+      "sha256": "8c6abedf936e1a126e231b0d41f500f36b18181c900dc855a9eff8ea5b39fe50"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/sessions/20261021T212819901016Z.json",
+      "bytes": 432,
+      "sha256": "431c35341b32e71b60921c74e4316ce1fc4545d78e9920e1735de5e378eb9ec2"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/sessions/20261021T213137744236Z.json",
+      "bytes": 432,
+      "sha256": "3efd0d1cc84747252edb74799e80b9ca06fde9cace9480b20bb8f5c941a78fcb"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/sessions/20261021T213302238743Z.json",
+      "bytes": 432,
+      "sha256": "a23ea716dceeaae36864f3b97e2fb463cdafe5ec434ed9722ce946152162f04a"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/ads/source_coverage_calendar.csv",
+      "bytes": 37503,
+      "sha256": "ed61cd324baf90e0dcd5e17af2f9429ad9881d93c20f5a46cebc578fda705af1"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/manifest.json",
+      "bytes": 46241,
+      "sha256": "2db9de0030cd14c098ed5f1b637e4ce217de3cf7d94ea68c0b7c2f1ff3d3457a"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/weather/transfer_manifest.json",
+      "bytes": 2501,
+      "sha256": "44b7da1a8f67b4bc719b05ef1ca6bca84488d580a4297a394e83d56f247218f5"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/weather/weather_previous_full_2024.response",
+      "bytes": 413731,
+      "sha256": "b1d9d1d42a5bb508f4c00623740394d6bc38db075357a53e631523192a3d652e"
+    },
+    {
+      "path": "data/raw/study_capture_20261021/weather/weather_previous_full_2025.response",
+      "bytes": 411573,
+      "sha256": "ea9bb2aacc32c34f25470d74bce31df6d57a5926a4761064f3c8e526f63afc2d"
+    },
+    {
+      "path": "data/raw/weather_verified_new_capture/acquisition_status.json",
+      "bytes": 585,
+      "sha256": "0f089975cc7e6506b3d8bb845424c02e8253e6faca7602eb727e8cdd65f9eec2"
+    },
+    {
+      "path": "data/raw/weather_verified_new_capture/transfer_manifest.json",
+      "bytes": 3649,
+      "sha256": "7313c946446b36c1fa774e061951cc3b65678d509e5199ebb7f69c2bd07b047a"
+    },
+    {
+      "path": "data/raw/weather_verified_new_capture/weather_acquisition_lock.json",
+      "bytes": 179,
+      "sha256": "49f2870df1209aaadba2feb9b06e8edaeb05721098bbd290ac7ba9d113afcba1"
+    },
+    {
+      "path": "data/raw/weather_verified_new_capture/weather_plan.json",
+      "bytes": 1430,
+      "sha256": "33a29ac867e54ce10b130f8b4641c8ac3cb1360580e5d1e39c8072bc326729e0"
+    },
+    {
+      "path": "data/raw/weather_verified_new_capture/weather_previous_full_2024.response",
+      "bytes": 413730,
+      "sha256": "a7ef16ef05fe799c803e02355872c8574fd94a1bef0804a12d609ae8dc77919c"
+    },
+    {
+      "path": "data/raw/weather_verified_new_capture/weather_previous_full_2025.response",
+      "bytes": 411574,
+      "sha256": "fb9c309c9c3c6ce46e61fd04637a33c30244895e0792358df977c403585a8ce4"
+    },
+    {
+      "path": "feasibility_report.txt",
+      "bytes": 1948,
+      "sha256": "30de5eeabffb1475c8fcd644f1e629553df330fd38b00fbeb424a7e1b203297b"
+    },
+    {
+      "path": "ORAL_DEMO_GUIDE.md",
+      "bytes": 6338,
+      "sha256": "62762ee3379c47c70473b70aa3feb53e04f305fd39eb788a0a4a01ba3d88a900"
+    },
+    {
+      "path": "outputs/figures/01_daily_pm25.pdf",
+      "bytes": 26316,
+      "sha256": "6e72ecc7baa5a7a9d3d030eda4f4d73ed46d1192b092adc6f1503b513781ce57"
+    },
+    {
+      "path": "outputs/figures/01_daily_pm25.png",
+      "bytes": 137049,
+      "sha256": "8899e37bd75027739897a4cc6d375168f47238bb846da119fbc976d4085a1963"
+    },
+    {
+      "path": "outputs/figures/01_daily_pm25_caption.txt",
+      "bytes": 138,
+      "sha256": "1292afddd96ab3e8c967c99c7431f4df15a1bffbde881ca51e8815e33b3e712e"
+    },
+    {
+      "path": "outputs/figures/02_exceedances_seasonality.pdf",
+      "bytes": 16623,
+      "sha256": "2d4db051dcc5a3d4ef9e29b1ab6d67b0957852e02ac6557be8fb1abb8387f555"
+    },
+    {
+      "path": "outputs/figures/02_exceedances_seasonality.png",
+      "bytes": 79409,
+      "sha256": "dbba33c414d1d606b4d527cbbc9f03c54764b4b877f407118aac34d5e1b8184b"
+    },
+    {
+      "path": "outputs/figures/02_exceedances_seasonality_caption.txt",
+      "bytes": 144,
+      "sha256": "ff953a9d44e67e6941cde43d8dea3712d5fb567228e36d26a6b6d6f3638c2c0f"
+    },
+    {
+      "path": "outputs/figures/03_fire_quality.pdf",
+      "bytes": 23955,
+      "sha256": "1c76afd70bab65cf030d8e92cdf68a9747e13fa1908e2a9e595bd8c81d249eed"
+    },
+    {
+      "path": "outputs/figures/03_fire_quality.png",
+      "bytes": 106791,
+      "sha256": "17ba1bb1e1c09e3783a8839cd61d389844f36b632233dad0131f3d096319644a"
+    },
+    {
+      "path": "outputs/figures/03_fire_quality_caption.txt",
+      "bytes": 219,
+      "sha256": "1fe8e2355f7ecce404ef3147e63f0ffe50532db7f1b31270efa4899a8b8c4d7a"
+    },
+    {
+      "path": "outputs/figures/04_twelve_settings.pdf",
+      "bytes": 20411,
+      "sha256": "f912fc5df8190df7ce1aa307216e1649e5a0a21fdb40ed8d866f13c91910d45d"
+    },
+    {
+      "path": "outputs/figures/04_twelve_settings.png",
+      "bytes": 63328,
+      "sha256": "adc728a972c70cd735eda505c08a9a1f7c1dde609c604155d03a77c570c005d5"
+    },
+    {
+      "path": "outputs/figures/04_twelve_settings_caption.txt",
+      "bytes": 172,
+      "sha256": "db74976a76cd2fcdd1483cc448067f242420715ed14b55b5004849a7e9296879"
+    },
+    {
+      "path": "outputs/figures/05_warning_errors.pdf",
+      "bytes": 13759,
+      "sha256": "c02d8b3c67653f1fbad1acac7bfaac0d0d35e14cff1985639f164642df2ce606"
+    },
+    {
+      "path": "outputs/figures/05_warning_errors.png",
+      "bytes": 35531,
+      "sha256": "a56d698d55d3131ab1c6b653f96433c9b8bd5d075fc75e8b79e715ac5db68e6f"
+    },
+    {
+      "path": "outputs/figures/05_warning_errors_caption.txt",
+      "bytes": 171,
+      "sha256": "e525e28f2df8fcbe0074ec6bfdb2bac31206ad63af32cfaa41fca38fb8a730c4"
+    },
+    {
+      "path": "outputs/figures/06_matched_period_coverage.pdf",
+      "bytes": 18134,
+      "sha256": "6f59793ed0b8545ecca87e33961a0500ae6ecd9ceedbe5887e9ae30c8fbb78fc"
+    },
+    {
+      "path": "outputs/figures/06_matched_period_coverage.png",
+      "bytes": 91304,
+      "sha256": "ea218ddb9e35145ba1a5caddd9d173acd714b0b65bab86c99620c87d0bdc3d8d"
+    },
+    {
+      "path": "outputs/figures/06_matched_period_coverage_caption.txt",
+      "bytes": 148,
+      "sha256": "90149034daa68e6024d384aeb7e53274cbe33d9f2ccdc33b295ba513921bbf40"
+    },
+    {
+      "path": "outputs/figures/07_warning_days.pdf",
+      "bytes": 24636,
+      "sha256": "0c3d0fdc9f6b5c4c21cd3311488ee6bcb41110d0cf4b473a9bd9212848a2c272"
+    },
+    {
+      "path": "outputs/figures/07_warning_days.png",
+      "bytes": 116668,
+      "sha256": "ae2b02a0a4cbc3a891322c54ef7eb87475b513d71ca89102f44382943406c797"
+    },
+    {
+      "path": "outputs/figures/07_warning_days_caption.txt",
+      "bytes": 183,
+      "sha256": "9b8f27bd70259368e35544a3b0a6b457886af4e25738d2a90f39222e55ef266f"
+    },
+    {
+      "path": "outputs/figures/08_workflow.pdf",
+      "bytes": 36677,
+      "sha256": "a7309a41901fff863a41a63482af323d6b9f4bd6635da3a9d3361b4e29c5633b"
+    },
+    {
+      "path": "outputs/figures/08_workflow.png",
+      "bytes": 186983,
+      "sha256": "7ac5a846b183d92e66015db6d4b52e3e0fc9cb9ad59b22493e607a11d2e7b3b3"
+    },
+    {
+      "path": "outputs/figures/08_workflow_caption.txt",
+      "bytes": 172,
+      "sha256": "07190e039289e1a7b8c24fccb867abd478160cfb9d7807fb157cf905b8e17e5d"
+    },
+    {
+      "path": "outputs/results/acceptance_review.json",
+      "bytes": 24561,
+      "sha256": "6c47c00f8077ea2327b35450554eee77cd893acd8104fbd7ee5504516523fa2d"
+    },
+    {
+      "path": "outputs/results/annual_summary.csv",
+      "bytes": 192,
+      "sha256": "15376570002fd3968d2deb42bc392e0059b52852176816d1cd88388d2ef200a7"
+    },
+    {
+      "path": "outputs/results/availability_gate.json",
+      "bytes": 583,
+      "sha256": "88dc3f40e861fe66fd9bfee602426eca5749894511bd1538634814f924700b79"
+    },
+    {
+      "path": "outputs/results/bootstrap_sensitivity.csv",
+      "bytes": 16822,
+      "sha256": "a3e5b0a06071ae7826d61f3577f7b23f32e19eb582e8ecd84fb778ab67830d3f"
+    },
+    {
+      "path": "outputs/results/chronology.csv",
+      "bytes": 411,
+      "sha256": "5f32ab54dd7b9b8bb0018e95272a4ed2006dce11ac38840e39d090febcc3f57b"
+    },
+    {
+      "path": "outputs/results/cohort_contract.json",
+      "bytes": 665,
+      "sha256": "9cc1cefb323bf39c31398f41205f281c51ff38f4dfb8d66f04efe699d3efe7a8"
+    },
+    {
+      "path": "outputs/results/cohort_ledger.csv",
+      "bytes": 145,
+      "sha256": "3925f6f9f56ea5f111a1cd431e6e9c34a9e4fc2cf218304f02dfa9672d7d3c11"
+    },
+    {
+      "path": "outputs/results/cohort_representativeness.csv",
+      "bytes": 127,
+      "sha256": "10bfe23c90ee625dbccabc18a907e8f2933673a50629585961b290d74f419652"
+    },
+    {
+      "path": "outputs/results/coverage_by_month.csv",
+      "bytes": 848,
+      "sha256": "c93f4b9d24080247ca68d87e2939ab13beabdb78d190f7ea51a5196a3ceabc0e"
+    },
+    {
+      "path": "outputs/results/coverage_summary.json",
+      "bytes": 428,
+      "sha256": "1333578f451ac8c02411a8caf8be43243308b894888d40b64d4bb63e4fe8832e"
+    },
+    {
+      "path": "outputs/results/cv_calendar_audit.csv",
+      "bytes": 733,
+      "sha256": "e44a3049b87587e492944cc6e3d22ba3a0b282dc770288b512d26c964208b12d"
+    },
+    {
+      "path": "outputs/results/data_dictionary.csv",
+      "bytes": 3162,
+      "sha256": "278f6478d88164f4f17448cd7e7128f5626154d4ca8c0f114899505f6f0840e1"
+    },
+    {
+      "path": "outputs/results/dataset_checks.csv",
+      "bytes": 1635,
+      "sha256": "e1708d11e5c4c21fffaecee46e7236018b244f16288da8d142e8bfe20e40b241"
+    },
+    {
+      "path": "outputs/results/dataset_checks.json",
+      "bytes": 6032,
+      "sha256": "7f1a6cc36e266bf53b23d45aabe6640c719339b28cba1c0cd74fbccf1d8c0837"
+    },
+    {
+      "path": "outputs/results/decision_cost_scenarios.csv",
+      "bytes": 423,
+      "sha256": "2798694b9862dc92acdc8795b3de38bccf5b874e5c8795c801070633d0da91ec"
+    },
+    {
+      "path": "outputs/results/dependency_check.json",
+      "bytes": 2233,
+      "sha256": "8acb490c3718ff3ca775953df31584af3c04a7e2b5ebc3fdabbbb7248b514921"
+    },
+    {
+      "path": "outputs/results/diagnostic_summary.json",
+      "bytes": 524,
+      "sha256": "b9dcbcb506f176b2b68e953dd37b79517f362a3bdd1018983047d3e6b417969b"
+    },
+    {
+      "path": "outputs/results/evaluation_receipt.json",
+      "bytes": 1258,
+      "sha256": "7f7eac2f8e34e46747cda4b02c8af486a7154ceac9af98679866a511db36be07"
+    },
+    {
+      "path": "outputs/results/exceedance_episodes.csv",
+      "bytes": 2757,
+      "sha256": "274f845a8935612044443209f62202c8b87932444137750a77a82ea7138b268f"
+    },
+    {
+      "path": "outputs/results/execution/01_fetch_data.json",
+      "bytes": 230,
+      "sha256": "58dfed1f81782a16186cbaa85ef9002a97057b64ff0454d23924bf65aa2326eb"
+    },
+    {
+      "path": "outputs/results/execution/02_prepare_data.json",
+      "bytes": 232,
+      "sha256": "b1af0c9b9ce47eee9d7dab87e4109557708153a2357bf181314405bc3ef05293"
+    },
+    {
+      "path": "outputs/results/execution/03_analyse.json",
+      "bytes": 226,
+      "sha256": "b9c8283e2e99de2036c8cadbe7d3ef9fe5b61f1a5772ccd629b1e13a37795573"
+    },
+    {
+      "path": "outputs/results/execution/04_model.json",
+      "bytes": 226,
+      "sha256": "4244bcc34992f341f651456016edb1b88226bcdfcb55e4a69c7688c61bb7b688"
+    },
+    {
+      "path": "outputs/results/execution_evidence.json",
+      "bytes": 1037,
+      "sha256": "1c3cbcc5f226c661aaee6fface15b17b7e0e13ec55fa540c7bccbf517f50a6da"
+    },
+    {
+      "path": "outputs/results/experiment_specs.json",
+      "bytes": 14876,
+      "sha256": "e3f4ceaa5160475546ae19871f64cd6bfe78195218f258343d0e69acc886c157"
+    },
+    {
+      "path": "outputs/results/feature_availability.csv",
+      "bytes": 22612,
+      "sha256": "6c121cdbc686cab8d47382ef005a6e5dcd2faaf13de51ddd1d3fa42eb1014bc6"
+    },
+    {
+      "path": "outputs/results/feature_manifest.csv",
+      "bytes": 21204,
+      "sha256": "64a38254f64d8c024ea17b08803aa07ab7149cbb70984810af6568114b510ab6"
+    },
+    {
+      "path": "outputs/results/fire_area_aggregation.json",
+      "bytes": 637,
+      "sha256": "004f443a1a870a4e4854167354c68eb66093d13c60ec2c6d2bb8fa0899aac8df"
+    },
+    {
+      "path": "outputs/results/fire_policy_sensitivity.csv",
+      "bytes": 491,
+      "sha256": "7f1e605a2148b5aa3aee9586d524a178937953693e6b909d18e1e641e56c04f0"
+    },
+    {
+      "path": "outputs/results/fitted_models/hgb__H1_3d.joblib",
+      "bytes": 313929,
+      "sha256": "3fd6c26003f79e0499b9720431cee538bd6ad3f88d2be2d428bbe9b7e49fc9c5"
+    },
+    {
+      "path": "outputs/results/fitted_models/hgb__H1_5d.joblib",
+      "bytes": 342889,
+      "sha256": "028b199caa8692d65b89ee5cbf994650da1d2bdb77e136a169aba2d762d4b902"
+    },
+    {
+      "path": "outputs/results/fitted_models/hgb__H1_7d.joblib",
+      "bytes": 341465,
+      "sha256": "513236ceba209b8961879fcb8677adb3f1cd99800d3e49a0afefccbfcbd82d6f"
+    },
+    {
+      "path": "outputs/results/fitted_models/hgb__H2_3d.joblib",
+      "bytes": 247877,
+      "sha256": "740be8e4304624206b9bf8fd8ac09165cf726553958b2f05ab8b8e1cc523d2d9"
+    },
+    {
+      "path": "outputs/results/fitted_models/hgb__H2_5d.joblib",
+      "bytes": 287253,
+      "sha256": "ef11f8dadffb3ee242847e40d3f8215ba4abbf7f2a24c4d5b61c8f0e2b4aa067"
+    },
+    {
+      "path": "outputs/results/fitted_models/hgb__H2_7d.joblib",
+      "bytes": 452053,
+      "sha256": "d4c4b5e75e294a70258178b6971d844dfa4da5ec24f4ee6de198ac4d8e8800f6"
+    },
+    {
+      "path": "outputs/results/fitted_models/hgb__H3_3d.joblib",
+      "bytes": 213497,
+      "sha256": "9661abead1f1c73b657d98a6ec82b3c0a787565d2fd9b218427febb592ea5fa7"
+    },
+    {
+      "path": "outputs/results/fitted_models/hgb__H3_5d.joblib",
+      "bytes": 235269,
+      "sha256": "57145905904f6ee531acdaa4b3447f9ed90a31011ec8c76198bbff7924bdbccb"
+    },
+    {
+      "path": "outputs/results/fitted_models/hgb__H3_7d.joblib",
+      "bytes": 253877,
+      "sha256": "9c8c7445e632de7c2bd616975a1c1630b5d0ff3f0be9cafabe1120812db31979"
+    },
+    {
+      "path": "outputs/results/fitted_models/hgb__H4_3d.joblib",
+      "bytes": 367765,
+      "sha256": "6e757f1e758f3cbf69763a31f9f7aaf8f5766beaf494bc68f3ad164d6ce11f5b"
+    },
+    {
+      "path": "outputs/results/fitted_models/hgb__H4_5d.joblib",
+      "bytes": 408693,
+      "sha256": "5aaab36c0d1a5dbe582c21502c58a19864b8c380d3994d2b362f9d866d913219"
+    },
+    {
+      "path": "outputs/results/fitted_models/hgb__H4_7d.joblib",
+      "bytes": 347349,
+      "sha256": "eae7bfc32e0f2094cbb959feac22172058ca7043e302f4f673813bc259a457d7"
+    },
+    {
+      "path": "outputs/results/fitted_models/ridge__H1_3d.joblib",
+      "bytes": 1657,
+      "sha256": "7c4b93fbaac46a62a48cd1fe0b4465ff6e709fa63d1818e60876cc7e7b52bd38"
+    },
+    {
+      "path": "outputs/results/fitted_models/ridge__H1_5d.joblib",
+      "bytes": 1945,
+      "sha256": "de58b62511c123a7b703c5a24f7da5de57a6fdcec7ac29f3ed9388ee640889da"
+    },
+    {
+      "path": "outputs/results/fitted_models/ridge__H1_7d.joblib",
+      "bytes": 2249,
+      "sha256": "5372847652fa6daecb6ef43257799b5cbfb11062021ccc95941bc74a33c12390"
+    },
+    {
+      "path": "outputs/results/fitted_models/ridge__H2_3d.joblib",
+      "bytes": 2801,
+      "sha256": "4ddb2cecb050cbb2844007b4e59d09f717773ef0c66192c4d90ac0e063299757"
+    },
+    {
+      "path": "outputs/results/fitted_models/ridge__H2_5d.joblib",
+      "bytes": 3825,
+      "sha256": "4cebaadb871e5183dd31781727fc5ed8d89613426375ac135eb7ef82cc55e0d2"
+    },
+    {
+      "path": "outputs/results/fitted_models/ridge__H2_7d.joblib",
+      "bytes": 4849,
+      "sha256": "650a3551dbcb5947fe1580785892b7378064011f4caaba24c65a604dbb22ffe2"
+    },
+    {
+      "path": "outputs/results/fitted_models/ridge__H3_3d.joblib",
+      "bytes": 2041,
+      "sha256": "b43a6ca6f5ca322f175996b0862eccd364eb14f600551bcedb37a02847b2071e"
+    },
+    {
+      "path": "outputs/results/fitted_models/ridge__H3_5d.joblib",
+      "bytes": 2569,
+      "sha256": "1cc03df32c576e35d343b8064f986a742eb73b636c78f094603febfc8a166d61"
+    },
+    {
+      "path": "outputs/results/fitted_models/ridge__H3_7d.joblib",
+      "bytes": 3113,
+      "sha256": "6885889dbe06bdbc1df6bcdb485b40c069b74270e040dfb883fd540d4e0ee147"
+    },
+    {
+      "path": "outputs/results/fitted_models/ridge__H4_3d.joblib",
+      "bytes": 3169,
+      "sha256": "7927d6e032e2ee40ce490fe0734820fde3643df6f33dba328bd5b59af521a231"
+    },
+    {
+      "path": "outputs/results/fitted_models/ridge__H4_5d.joblib",
+      "bytes": 4449,
+      "sha256": "ab42566d0396126fe91f752f8b224506a07deb2546d110a2fce683e7b488475c"
+    },
+    {
+      "path": "outputs/results/fitted_models/ridge__H4_7d.joblib",
+      "bytes": 5729,
+      "sha256": "bdde5000fb596f30e961ce2f1fcf0f24a5cc08e5704e807a047b996de36218f5"
+    },
+    {
+      "path": "outputs/results/forecast_lock.json",
+      "bytes": 41146,
+      "sha256": "87847cbc90bd67552146b3a3b56bf7eaa44a7d773798434004fd03aec28e665a"
+    },
+    {
+      "path": "outputs/results/invalid_values.csv",
+      "bytes": 496,
+      "sha256": "713a2636f6bb5698cd09c6e262e64768de5ce19066ad347f1e75887a6625eef0"
+    },
+    {
+      "path": "outputs/results/join_audit.json",
+      "bytes": 637,
+      "sha256": "dfd19f1dcaad2ce86b2ea65e8480bdf6698fd500e8c41a3ffd7edf2f45573551"
+    },
+    {
+      "path": "outputs/results/learner_robustness.csv",
+      "bytes": 802,
+      "sha256": "e2682b0a19a39496ca22ad6254a0eaf53efa170ea9102284323d35cc18ab146d"
+    },
+    {
+      "path": "outputs/results/metrics.csv",
+      "bytes": 5769,
+      "sha256": "995a3e7436ef82ee29c4722c0ec76df5c8c04fd23ea3fa2f5209606b3fa84294"
+    },
+    {
+      "path": "outputs/results/missed_day_details.csv",
+      "bytes": 2925,
+      "sha256": "12937a9786edc57b03abd5fc7971bb87161acdd44c23d9b106e4bcc72baa4384"
+    },
+    {
+      "path": "outputs/results/missing_decisions.csv",
+      "bytes": 5638,
+      "sha256": "946c9be3dbeaa7877bf04a1b959a9cf38afb73c20d396c6ba6d7acd7b28eee42"
+    },
+    {
+      "path": "outputs/results/missingness.csv",
+      "bytes": 1181,
+      "sha256": "6b197020bde0fa3866f0451fee81414a84fb6a771a9782b42a31eefd38ed8a1c"
+    },
+    {
+      "path": "outputs/results/model_development_comparison.csv",
+      "bytes": 556,
+      "sha256": "41dae5446ae492fd15d29f212ad0cf6798acf512f084a071b5dda6c3480c9b07"
+    },
+    {
+      "path": "outputs/results/model_scores.csv",
+      "bytes": 5769,
+      "sha256": "995a3e7436ef82ee29c4722c0ec76df5c8c04fd23ea3fa2f5209606b3fa84294"
+    },
+    {
+      "path": "outputs/results/monthly_summary.csv",
+      "bytes": 767,
+      "sha256": "a459c1db58c55e075432d263e542f1c711e62ab74a3b3d974dd1b9b35e02bdf5"
+    },
+    {
+      "path": "outputs/results/paired_comparisons.csv",
+      "bytes": 6211,
+      "sha256": "cecaa03324e3c058376d2c59b9043bc71c0ea17f0360b951c369f605631cfa55"
+    },
+    {
+      "path": "outputs/results/pdf_visual_review.json",
+      "bytes": 816,
+      "sha256": "f438576f98d6f20d07dbd50639b883e9cf5fb1808ed72232354bc59091a64082"
+    },
+    {
+      "path": "outputs/results/prediction_receipt.json",
+      "bytes": 2909,
+      "sha256": "c485146bd3b3a8c73118525eeeddd266bb3d5dd2d354053d332cc4f21279f0c1"
+    },
+    {
+      "path": "outputs/results/predictions_test.csv",
+      "bytes": 193414,
+      "sha256": "75712ef72ed551f5de4be734572ba72b9bd8283a835622a0a2b201d71a0ef5b0"
+    },
+    {
+      "path": "outputs/results/predictions_test_blind.csv",
+      "bytes": 186650,
+      "sha256": "d8c16b15fcb48486985e6637e061bb48e1eb7b2f4f07f550c27c9a5bc4649131"
+    },
+    {
+      "path": "outputs/results/predictions_validation.csv",
+      "bytes": 48563,
+      "sha256": "954fc63cd283bd9613a70a9a1b005247735303cd3db9395bccc507264f99cf5d"
+    },
+    {
+      "path": "outputs/results/rain_interval_audit.csv",
+      "bytes": 21350,
+      "sha256": "0caf1cc1886373330cb0ace8398292550876c2dbbd61a25c4a9ee601f3c9f917"
+    },
+    {
+      "path": "outputs/results/raw_checks.csv",
+      "bytes": 1103,
+      "sha256": "b7f086442f92be132ed99a06e697ba26f3667e1b6b7ce3b1fccef690b0ea69ce"
+    },
+    {
+      "path": "outputs/results/raw_checks.json",
+      "bytes": 4993,
+      "sha256": "11c83229f2fa29ede64a7ce5313a210a5c6d5f5032ef8811715de63c5f7c3f81"
+    },
+    {
+      "path": "outputs/results/raw_decode_audit.json",
+      "bytes": 10223,
+      "sha256": "3eb98e926231e993616cd84c904bdd244189bf80b2c40edd0ec40728b4e29c2f"
+    },
+    {
+      "path": "outputs/results/reference_store.json",
+      "bytes": 1184,
+      "sha256": "6caf94b5576f56c26ac82bd73242a731d9cbf60b1d831aef435e46a71861808d"
+    },
+    {
+      "path": "outputs/results/regression_tests.json",
+      "bytes": 7261,
+      "sha256": "b5ed9ef4ad32752d15c42059452ef829c6c9920cee6f788c76a367399e54ae77"
+    },
+    {
+      "path": "outputs/results/row_inclusion.csv",
+      "bytes": 64850,
+      "sha256": "97568cc0d142a8b5f3ba495609bb0b0663b8aa57b46f4dfb804c88acae0ba61d"
+    },
+    {
+      "path": "outputs/results/run_state.json",
+      "bytes": 2212,
+      "sha256": "f618993c94a1080d19c6424107ca9f32ebe5c69b237f757956e0454a333a734e"
+    },
+    {
+      "path": "outputs/results/script_route_validation.json",
+      "bytes": 5283,
+      "sha256": "d41a678e7abe2cc33c361126bc3a9f0fccb8430de3bc2ec43d746a72340d3348"
+    },
+    {
+      "path": "outputs/results/seal_verification.json",
+      "bytes": 1275,
+      "sha256": "d10d7e609036a95568ada23708bf293e74b1c592deaf124868b85a1722642a3b"
+    },
+    {
+      "path": "outputs/results/selection.json",
+      "bytes": 340,
+      "sha256": "c4b982cb4b5cbefd905998598b106ded16f76f640509bc45397052426c126b09"
+    },
+    {
+      "path": "outputs/results/source_time_contract.json",
+      "bytes": 2141,
+      "sha256": "44ee57616379cb9b240cd79700a08c52d45ee25b591721863897598470cce631"
+    },
+    {
+      "path": "outputs/results/spatial_resolution_audit.json",
+      "bytes": 1348,
+      "sha256": "0ceda41b3118fc8b6a2a9aca6858476b5ad92901fdd26eb69d8126ae4e69cb3c"
+    },
+    {
+      "path": "outputs/results/station_coordinate_grid_audit.json",
+      "bytes": 553,
+      "sha256": "9f53df837e2382a9e120f2163572cd477a1a30f2f15b86f2f75bc34354e5f665"
+    },
+    {
+      "path": "outputs/results/station_crosscheck.csv",
+      "bytes": 887,
+      "sha256": "54120a4253626f57c62af05498ec2da7b69261669821f396a41e89f63aac471a"
+    },
+    {
+      "path": "outputs/results/station_crosscheck.json",
+      "bytes": 2751,
+      "sha256": "d9d58e7f5ff313a3e2c4781078335f13b15c79f6a3e074c8e4120e18ca5cbb38"
+    },
+    {
+      "path": "outputs/results/timezone_examples.csv",
+      "bytes": 380,
+      "sha256": "20a9a5c944221fa782071edb68bf923c6020a355b1ed216d07bcfb065a29f78e"
+    },
+    {
+      "path": "outputs/results/tuning.json",
+      "bytes": 7147,
+      "sha256": "0c489c8354a7f64a1b38aebeb04397ab8596c2d838dc285962447a68d79a7821"
+    },
+    {
+      "path": "outputs/results/twelve_answers.csv",
+      "bytes": 6347,
+      "sha256": "2aff0da19199d1ac4c9fec41f55785e65253a3d12cb423070d18d954a19f0dec"
+    },
+    {
+      "path": "outputs/results/validation.json",
+      "bytes": 2655,
+      "sha256": "7de0b288abf7dc44f9fb9a6e56c96e7ecdbc0dead727d4acd2e4b146f1356013"
+    },
+    {
+      "path": "outputs/results/validation_scores.csv",
+      "bytes": 2704,
+      "sha256": "a075ecfc39b34621b9b2af430cacb5d59e83951360a41f6e70cfeab2d389cb19"
+    },
+    {
+      "path": "outputs/results/warning_day_details.csv",
+      "bytes": 44988,
+      "sha256": "48920288caef40551a39a6b5f0d691c7c05dd968876bfd78551dd8ca287249aa"
+    },
+    {
+      "path": "outputs/results/weather_raw_audit.json",
+      "bytes": 1969,
+      "sha256": "b916fc6174b06d189062899a4048e678a56a99db6ea2c8b478b8449df52b7aa2"
+    },
+    {
+      "path": "outputs/results/window_selection_by_group.csv",
+      "bytes": 430,
+      "sha256": "b131c8bca2ef1fc6c5614f93693e9e274448a6a67744f52d9b2808f282da33e5"
+    },
+    {
+      "path": "project_metadata.json",
+      "bytes": 365,
+      "sha256": "e1666ad8eda7b408688a627df883bf153549af1f4679043f8ae70beb7b878ea3"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8208,
+      "sha256": "204e1db72d3aa75aa96662cea3ffb8daeff48f2ad451d20ad2d3c5fbefe4d30c"
+    },
+    {
+      "path": "reference/initial_benchmark/chronology.csv",
+      "bytes": 218,
+      "sha256": "cd999e4fe46f4080e7556fb333c94193910b5dee9e44e8938679892f651bdb7b"
+    },
+    {
+      "path": "reference/initial_benchmark/coverage_summary.json",
+      "bytes": 397,
+      "sha256": "c0e5a1af3aaa5fe01bd721c9748cc63450afbcc2340faa4a2056fbf53d8a1b36"
+    },
+    {
+      "path": "reference/initial_benchmark/feature_manifest.csv",
+      "bytes": 19139,
+      "sha256": "1e9141173da329756d7342dc108dc83d13b6a2414b3e003365543e362a93090a"
+    },
+    {
+      "path": "reference/initial_benchmark/model_scores.csv",
+      "bytes": 6926,
+      "sha256": "dba53562ab8c3d747fb6801f7f12fa48583a31c9670f9e67f2fa45933956ec57"
+    },
+    {
+      "path": "reference/initial_benchmark/selection.json",
+      "bytes": 340,
+      "sha256": "62ff66fbbe92395274a7a2665d892f65a8e6e0c606a28351526242b65326c3fb"
+    },
+    {
+      "path": "reference/model_development_trace.csv",
+      "bytes": 3352,
+      "sha256": "6aae603da809b0d83c85252ef2f2ffed760eb207eae01328f5ddaad15f3c3279"
+    },
+    {
+      "path": "reference/original_notebook_inventory.json",
+      "bytes": 1207,
+      "sha256": "b026395a50af6fcfecb07817afbf6cefa339485ffd196c997fa51c43af912700"
+    },
+    {
+      "path": "report/cell_guide.csv",
+      "bytes": 4658,
+      "sha256": "3c4a6d974255ade0233f982e89ed227fee3b469aa00cf49f2538fbf4082d6917"
+    },
+    {
+      "path": "report/fonts/NotoSansThai-Regular.ttf",
+      "bytes": 37752,
+      "sha256": "404ddfb5ed0aaa6b6ec8a85700d682978992062d67da93903967b56cbd9a4acc"
+    },
+    {
+      "path": "report/fonts/OFL.txt",
+      "bytes": 4377,
+      "sha256": "0dab92d0544f7b233403f14b84a663bdbfa746982eda629e7f4f9ffe1b036feb"
+    },
+    {
+      "path": "report/proposal.pdf",
+      "bytes": 74839,
+      "sha256": "d484a1245742218cae6b0f9437097703e677a620cedc0906f065b297c960b698"
+    },
+    {
+      "path": "report/report.pdf",
+      "bytes": 1096832,
+      "sha256": "036dc6a5bd3147ee9e2ce8e0772477a4b66c7adc514164358f6daa510ecc8ac7"
+    },
+    {
+      "path": "report/report_draft.md",
+      "bytes": 102710,
+      "sha256": "51ae17cae3164e6b0ffc008f33d71843fc2ff52ca615b106b05570fe15ab0756"
+    },
+    {
+      "path": "report/report_provenance.json",
+      "bytes": 11808,
+      "sha256": "b91d0c410675c74c80dfe6af65fba374e30fb68a79ac757cf0494bcef89b6bde"
+    },
+    {
+      "path": "report/study_metadata/acquisition_plan.json",
+      "bytes": 84164,
+      "sha256": "faf893c4b7efddb1bc3fc9750f54771830d24d2a13f5914d29de9302b0f21e23"
+    },
+    {
+      "path": "report/study_metadata/gfas_public_process_schema.json",
+      "bytes": 5239,
+      "sha256": "052dca19667372ae67569ceb4f7ac48610096cb0fbbce60166180f6444249fea"
+    },
+    {
+      "path": "report/study_metadata/pm_public_process_schema.json",
+      "bytes": 7723,
+      "sha256": "f208f5e490cf4ad412365f80004ef5ae485305eb7d5283b8a5d636ba4ca4b48a"
+    },
+    {
+      "path": "report/study_metadata/public_api_schema_validation.json",
+      "bytes": 1358,
+      "sha256": "edd9267edca8915c8df281280e55a574d8fceca26d8030ac56d706a63643631c"
+    },
+    {
+      "path": "report/study_metadata/source_time_contract.json",
+      "bytes": 2141,
+      "sha256": "44ee57616379cb9b240cd79700a08c52d45ee25b591721863897598470cce631"
+    },
+    {
+      "path": "report/study_metadata/study_contract.json",
+      "bytes": 2034,
+      "sha256": "a18d2799fe00b8de838d92bb0085a5f3d94ab23ce702c6e7aaa4059dbc06f20a"
+    },
+    {
+      "path": "report/study_metadata/weather_acquisition_verification.json",
+      "bytes": 858,
+      "sha256": "c39a555b1ccec336fa80779ed5c7a6ad2043fcce22872491da623d722bf50012"
+    },
+    {
+      "path": "requirements-lock.txt",
+      "bytes": 1310,
+      "sha256": "0147317919373da78051ef9eef4e895fb52531cbc1b97b9e54eae85f1a68c6d5"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 294,
+      "sha256": "6d041d8f4d881509ee6d40d86262d03856ec859fe1634bf66b546cb65171cce7"
+    },
+    {
+      "path": "RUBRIC_EVIDENCE.md",
+      "bytes": 5933,
+      "sha256": "924d4a598ff0e528ef6bc35dbc15f3798b6fc4a5c23ee9a231c8821698227705"
+    },
+    {
+      "path": "run_all.py",
+      "bytes": 4273,
+      "sha256": "68b661a11a02759d6a27ea108346f2bea741323ca36bfd39ecdd68d385267987"
+    },
+    {
+      "path": "run_scripts.py",
+      "bytes": 1732,
+      "sha256": "6716f1c340f3c4c19e5dfa65febdcd6c49c65c9f6b4ad34a937e6fefb205c223"
+    },
+    {
+      "path": "snapshot.json",
+      "bytes": 205,
+      "sha256": "c8bbb79903a1fffc6339900d198784ccab4853e1386efea2bbc239296015ab9b"
+    },
+    {
+      "path": "src/ads_bulk_acquisition.py",
+      "bytes": 51208,
+      "sha256": "9361c8c394fb205ad5a36216c10d26d82767392e4412f229251e0e36e803bd66"
+    },
+    {
+      "path": "src/analyse.py",
+      "bytes": 7171,
+      "sha256": "623796005e505057a2e2be97ea390f2d3b92ee65521d99177ebfb9904820cb30"
+    },
+    {
+      "path": "src/availability.py",
+      "bytes": 4338,
+      "sha256": "d9012846a0bc0a266ec52c2a5701bed1181b8efc7cf285e1a8c80adfdfe4ce32"
+    },
+    {
+      "path": "src/check_dataset.py",
+      "bytes": 18084,
+      "sha256": "7d14f8214f631f7e6eaf3b225f0ed35decfb696e2b82b3dec07d307f436021b8"
+    },
+    {
+      "path": "src/common.py",
+      "bytes": 4838,
+      "sha256": "7d690c693edf64891b313e1634dc566d543fa60efeb2e361895282cf043b474d"
+    },
+    {
+      "path": "src/diagnostics.py",
+      "bytes": 9496,
+      "sha256": "7fd25b4746be7dd0fdcb0a99715f2788812d5af6743d0cd44e694a4ddc14f9a5"
+    },
+    {
+      "path": "src/environment_check.py",
+      "bytes": 1338,
+      "sha256": "b6cf90537fbcac7d848d08b89ef7d4c3b1f7cc92e8401fdf5497e9b9402d2d63"
+    },
+    {
+      "path": "src/evaluate_forecast.py",
+      "bytes": 18024,
+      "sha256": "f255001f602ba28dab61e709a34faa19ddb58df2cdbcc43cb89ed6c789f0337a"
+    },
+    {
+      "path": "src/fetch_data.py",
+      "bytes": 6033,
+      "sha256": "d2d5fddb7242eca21d4e5991bbbacfb01ed7c48f45d23e7fc88f1b3b6a83259f"
+    },
+    {
+      "path": "src/model.py",
+      "bytes": 13718,
+      "sha256": "8d22c1c9f82b51e65c454f525d559535da9b05a98a6fff411f1198aa32524c55"
+    },
+    {
+      "path": "src/prepare_data.py",
+      "bytes": 20486,
+      "sha256": "d0bcff5b93499cb956826fddb3d584d9f0fbdad464754fa7aa8525a89f6ff67f"
+    },
+    {
+      "path": "src/reference_store.py",
+      "bytes": 8702,
+      "sha256": "8ee848824a6a14fc9c497d5c5d100981388758f0a0d19bec891ce9cfbb3e5c06"
+    },
+    {
+      "path": "src/report.py",
+      "bytes": 244,
+      "sha256": "0ea75bfdd53b76e49c851dfe68910d68606cf2c955c0c8598e1aca9bb19b60d2"
+    },
+    {
+      "path": "src/report_assets.py",
+      "bytes": 3649,
+      "sha256": "52f57b4bd971ea1183ef4160694336fa95f90e6c41a27ccfabccbe20eeb1fe10"
+    },
+    {
+      "path": "src/report_document.py",
+      "bytes": 47029,
+      "sha256": "c73b75493f75e96e6328a9c832c140dc97ace779a08ed67cb81133cb4c8b12c5"
+    },
+    {
+      "path": "src/source_contract.py",
+      "bytes": 2584,
+      "sha256": "e37f714981083b5e0f5ee7c1991940f279cc6d6648d03ac2369336a6dd6e6e26"
+    },
+    {
+      "path": "src/stages.py",
+      "bytes": 2778,
+      "sha256": "24e1ff2d47f2859eff3c02bca68f51057becf1abf0b78a67e6f4571d1fbd9bc6"
+    },
+    {
+      "path": "src/station_crosscheck.py",
+      "bytes": 11692,
+      "sha256": "299600d736eef0950ac632cd7f992bf39d911f81aa9a8e7f292946048d079f00"
+    },
+    {
+      "path": "src/verify_project.py",
+      "bytes": 471,
+      "sha256": "b622987e69902c42f4d0b7fbc880c7ed8dc265fc8d4e13a45a2b046b3403606d"
+    },
+    {
+      "path": "src/weather_acquisition.py",
+      "bytes": 8618,
+      "sha256": "33b06461642e12728617f13150771d1f64f9bf79142e440994fd0f749877e801"
+    },
+    {
+      "path": "src/workflow.py",
+      "bytes": 10686,
+      "sha256": "50783ff7a251ea8baeaa5720f0f40faa0fff75434f16e00fd3d4105959324899"
+    },
+    {
+      "path": "student_profile.json",
+      "bytes": 265,
+      "sha256": "a5d2d3f10358e392df92434c1a839ffad625181484c60213910237597641a82e"
+    },
+    {
+      "path": "SUBMISSION_GUIDE.md",
+      "bytes": 2940,
+      "sha256": "2ec56f80fcb43661e385bcadecbfe3933df58bbb96e7db20ada6890c8fe3fb8e"
+    },
+    {
+      "path": "SUBMISSION_STATUS.json",
+      "bytes": 1347,
+      "sha256": "3259be65f6510e0e3c6aaf625ce29e87e2bb1f4949a787b7d382fab609697768"
+    },
+    {
+      "path": "tests/test_acquisition_and_ledger.py",
+      "bytes": 6403,
+      "sha256": "ae7ca6317b03a743349635a1d09fa37a491ec8214f408c3960380c28d4d41aba"
+    },
+    {
+      "path": "tests/test_cli_contract.py",
+      "bytes": 2248,
+      "sha256": "0a2dbddb5a09c582468956d88ff5ad6db117f78da5c6450394c72f990ba89d5e"
+    },
+    {
+      "path": "tests/test_temporal_contract.py",
+      "bytes": 10890,
+      "sha256": "6f156eb3e4c981a1ee19f6789733bd48596798fa9846ea749f4172d543c7e8aa"
+    },
+    {
+      "path": "tools/acquire_ads.py",
+      "bytes": 2001,
+      "sha256": "152155fd3198640b33637b9407bc5729cd198f109a10457cf1f87b1118f9415c"
+    },
+    {
+      "path": "VERIFICATION.md",
+      "bytes": 1271,
+      "sha256": "38136320e3f59e239a322fc53d988deab4e3bc7ad1d53e437e0a404680ca7551"
+    }
+  ],
+  "notebook_evidence": {
+    "notebooks": [
+      {
+        "notebook": "01_fetch_data.ipynb",
+        "code_cells": 6,
+        "executed_code_cells": 6,
+        "stored_errors": 0,
+        "every_code_line_commented": true,
+        "fully_executed": true
+      },
+      {
+        "notebook": "02_prepare_data.ipynb",
+        "code_cells": 6,
+        "executed_code_cells": 6,
+        "stored_errors": 0,
+        "every_code_line_commented": true,
+        "fully_executed": true
+      },
+      {
+        "notebook": "03_analyse.ipynb",
+        "code_cells": 4,
+        "executed_code_cells": 4,
+        "stored_errors": 0,
+        "every_code_line_commented": true,
+        "fully_executed": true
+      },
+      {
+        "notebook": "04_model.ipynb",
+        "code_cells": 14,
+        "executed_code_cells": 14,
+        "stored_errors": 0,
+        "every_code_line_commented": true,
+        "fully_executed": true
+      }
+    ],
+    "notebook_count": 4,
+    "code_cells": 30,
+    "executed_code_cells": 30,
+    "stored_errors": 0,
+    "every_code_line_commented": true,
+    "fully_executed": true
+  },
+  "all_four_executed_notebooks_included": true,
+  "external_submission_complete": false,
+  "operational_availability_proven": false,
+  "full_lab_ready_certified": false,
+  "scientific_scope": "Nominal-release-constrained retrospective benchmark; actual historical publication/revision not certified."
+}

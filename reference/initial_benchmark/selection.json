@@ -1,0 +1,9 @@
+{
+  "primary_family": "ridge",
+  "experiment": "H3_5d",
+  "selection_partition": "validation only",
+  "selection_metric": "MAE",
+  "validation_MAE": 4.0475562171970685,
+  "test_was_not_used_for_selection": true,
+  "data_status": "Previously explored historical test; prediction-stage isolation does not restore an unseen holdout."
+}
