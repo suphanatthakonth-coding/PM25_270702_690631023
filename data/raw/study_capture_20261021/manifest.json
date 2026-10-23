@@ -1,0 +1,1377 @@
+{
+  "run_id": "study_capture_20261021",
+  "status": "complete",
+  "config": {
+    "study_contract": "next_day_0700_thai",
+    "start_date": "2024-01-01",
+    "end_date": "2025-12-31",
+    "history_calendar_start": "2023-12-24",
+    "history_calendar_end": "2025-12-31",
+    "latitude": 18.7883,
+    "longitude": 98.9853,
+    "timezone": "Asia/Bangkok",
+    "operational_issue_time_local": "07:00",
+    "pm_source": "CAMS operational forecast archive, fixed 12 UTC vintage",
+    "weather_source": "Open-Meteo gfs_global previous_day1 forecast history",
+    "fire_source": "GFAS v1.2 UTC daily analysis",
+    "firms_bbox": "97.0,17.5,101.0,21.0",
+    "min_valid_hours": 24,
+    "seed": 42,
+    "windows": [
+      3,
+      5,
+      7
+    ],
+    "train_target_end": "2024-09-29",
+    "validation_target_start": "2024-10-01",
+    "validation_target_end": "2024-12-30",
+    "test_target_start": "2025-01-01",
+    "outer_label_purge_target_days": [
+      "2024-09-30",
+      "2024-12-31"
+    ],
+    "inner_splits": 3,
+    "cv_gap_calendar_days": 1,
+    "warning_threshold": 37.5,
+    "block_days": 14,
+    "bootstrap_repeats": 1000,
+    "primary_family": "ridge",
+    "model_families": [
+      "ridge",
+      "hgb"
+    ],
+    "bootstrap_sensitivity_days": [
+      7,
+      14,
+      28
+    ],
+    "prediction_mode": "retrospective",
+    "data_previously_explored": true,
+    "advisory_start_utc_day": "2024-08-09",
+    "advisory_end_utc_day": "2024-08-14",
+    "advisory_policy": "Conservative all-region date-dependency quarantine; does not assert local contamination.",
+    "fire_offsets_from_issue_days": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "earth_radius_m": 6371008.8,
+    "source_availability_scope": "Nominal-release-constrained retrospective benchmark; actual historical publication/revision not certified."
+  },
+  "source_config_hash": "396f202b2c96a1e48047c7267ce326f91f152bdd93d89b519f1feb30ee569331",
+  "files": [
+    {
+      "file": "ads/acquisition_lock.json",
+      "sha256": "565e730f50f460fd9360df859a2a40dda50929707a34a3b0c51fba783b8e3c18",
+      "bytes": 190,
+      "status": "success"
+    },
+    {
+      "file": "ads/acquisition_summary.json",
+      "sha256": "e9b82b5bee77dd51238385686f8f84bc229d7bff7332ca9f8968c0221b08d1a7",
+      "bytes": 698,
+      "status": "success"
+    },
+    {
+      "file": "ads/ads_full_acquisition.py",
+      "sha256": "fe5152532ac99df8a796df999b81974d42664eba0e784139922e729396232660",
+      "bytes": 50839,
+      "status": "success"
+    },
+    {
+      "file": "ads/download_ledger.csv",
+      "sha256": "50e77606a4b81394e2d5f593a599b60dd1adabcfaf6cb3cda91a252df4bfafd3",
+      "bytes": 2765,
+      "status": "success"
+    },
+    {
+      "file": "ads/field_metadata.json",
+      "sha256": "ba147dba5d23c86472abcb502a2490899e77d6c370b901979f14cc247ef574d4",
+      "bytes": 32198655,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2023-12/job_state.json",
+      "sha256": "200b0412f5a61b04a100c4543039a1eabbef1afb5fe5c168953ea9da3389a1b7",
+      "bytes": 1212,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2023-12/qc.json",
+      "sha256": "f67dd9f271240a1067ce5266351ccf46f22f81f7b06c9a5faba18a2eb44a0b57",
+      "bytes": 16422,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2023-12/raw.grib",
+      "sha256": "00915f0d2b682d4b59716a1d6d7f104c647e3b3ace083345e541d1263aa303ca",
+      "bytes": 90144,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2023-12/transfer_receipt.json",
+      "sha256": "9c48434caa8831b407363ab3f0f295e48380797f5277bdd4f9606b458186fd5a",
+      "bytes": 1176,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-01/job_state.json",
+      "sha256": "d6623ef393edb6e0cd8ab6ec1a96ab81ae658bbba9bb762be743d8b05eb66c7c",
+      "bytes": 1652,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-01/qc.json",
+      "sha256": "310f8e31c2f9699c1b053c0eabe1cb8526c8095ab2cc49c9fad2178af1a51fa8",
+      "bytes": 55637,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-01/raw.grib",
+      "sha256": "91f9ba5e0276cf9711ec72caae448ee8db4725025cd8f4981a8b830932d7e345",
+      "bytes": 310496,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-01/transfer_receipt.json",
+      "sha256": "1539ac9de440cc6c70bdcdc5e2c61e509facf718fec2ff72de594a7206cbc743",
+      "bytes": 1617,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-02/job_state.json",
+      "sha256": "69a1c60caae2247628ad2fac19cd3c26dd7276c637253d3849cb81bc1c36247b",
+      "bytes": 1612,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-02/qc.json",
+      "sha256": "ae3cf2dbf2ad13094da65a30d459becc4f738cdd455c503e6118a7fb1b730c32",
+      "bytes": 52088,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-02/raw.grib",
+      "sha256": "6ff89906bc81da6400ab765e47667137e66285e50bf1348b8f5ea4a09c77d30f",
+      "bytes": 290464,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-02/transfer_receipt.json",
+      "sha256": "0c4a591ab7d51372a99b39f5cbeb5fc7e96a2d428b9a1f1462bd580541f621dd",
+      "bytes": 1577,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-03/job_state.json",
+      "sha256": "adaa9c6111956eaeecb1a7cda8ae070e987ff896c48211f86f530279728912a1",
+      "bytes": 1652,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-03/qc.json",
+      "sha256": "ac4728d783a1faecdc13d4d438383a19d380bb268b35b7137cc8a3ca69a87cd8",
+      "bytes": 55659,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-03/raw.grib",
+      "sha256": "4a2ab82a5667a4d01577324c78d7eeb76853654fdafb749bf5c6fa6ca97d72f3",
+      "bytes": 310496,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-03/transfer_receipt.json",
+      "sha256": "9bf2ee581d8658ca2eff0097f1a1ea8e142a64dfb3c7665e2bd17431b9da4e33",
+      "bytes": 1617,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-04/job_state.json",
+      "sha256": "929a601ccb9b9d97e4852e3d8bf140e279315b2d654bcdf3b5ec352cb6f354c1",
+      "bytes": 1632,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-04/qc.json",
+      "sha256": "c2795db79fda0159a60968f3938ac4f00107e9074a936a8a50204e6d3b86359a",
+      "bytes": 53866,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-04/raw.grib",
+      "sha256": "77d5c4ca96bc896ce9d878af33743606ee571bc9a48ce392d5fc60528ead4a1d",
+      "bytes": 300480,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-04/transfer_receipt.json",
+      "sha256": "1783145d93a490abdbeae5c2ee5f5910d4fb549419e50130838a45c4fd8f95d3",
+      "bytes": 1597,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-05/job_state.json",
+      "sha256": "57fb6670be2edb50c94418915fb0bf89b430b2127d9c0656bc81e411d9f5e2ba",
+      "bytes": 1652,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-05/qc.json",
+      "sha256": "4d09a56c2397607fb700f8670df198802f9f91c83e1593b0e42ef0279dbe8f15",
+      "bytes": 55525,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-05/raw.grib",
+      "sha256": "5f2406de23f2a3f4224ed79234bae218cd6731298892d93389e47a8b0ec6aa54",
+      "bytes": 310496,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-05/transfer_receipt.json",
+      "sha256": "6ff433847d3449c46ab38a88a4bfefd1bad221210afe84527787fa0719bc5ff7",
+      "bytes": 1617,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-06/job_state.json",
+      "sha256": "48028faa47883b34c8bfe3790452d1a68eaf813607f028a51b1aa3f8b8d59511",
+      "bytes": 1632,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-06/qc.json",
+      "sha256": "64634ce21fa8fd0ef6ca67f4a1a4d996711818e28c4816496e355478fb4be883",
+      "bytes": 53556,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-06/raw.grib",
+      "sha256": "913c117e07865bd303f1a3a1db41fba6e78bfdd4e6ba04523d8c9306457cd24d",
+      "bytes": 300480,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-06/transfer_receipt.json",
+      "sha256": "93646af6f1d9d875d9eb1c3a0efe26b0b9924aefdbbaa2a060d0210551ab696b",
+      "bytes": 1597,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-07/job_state.json",
+      "sha256": "0ce2eab3cd2049c4680ce56f9888bc15bee4543e4311b006037c91a1a0f0b79e",
+      "bytes": 1652,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-07/qc.json",
+      "sha256": "0dd7000307c0aa0f2b0413c96347a9ac95249194c7ada6a37ec3748ef84a6ff5",
+      "bytes": 54968,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-07/raw.grib",
+      "sha256": "84c08883b967dc8e6f9f7311b1ab67dbd89d4cf7dcc2c4a75ba605043d1964c9",
+      "bytes": 310496,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-07/transfer_receipt.json",
+      "sha256": "6a4e159f66f5c501565d68bf6e92f6f5f13d1e5aa23fbf9b66ad160e118473e7",
+      "bytes": 1617,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-08/job_state.json",
+      "sha256": "27b1c72bd13b62250900e6e0e5241f945a4d8ca336f4331befe812efd13c4e0a",
+      "bytes": 1652,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-08/qc.json",
+      "sha256": "626af0ac81c780b0078c9b4294ed5bfbc099e7fbb5b5a0f911d12e5837d60241",
+      "bytes": 55078,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-08/raw.grib",
+      "sha256": "47c421aa375511ad86b8e9f019237856b4ac1085dd19a832820b319f913011ad",
+      "bytes": 310496,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-08/transfer_receipt.json",
+      "sha256": "a0b987b97416c69218f3e0826c2c75d05d775cda24b9578d4721d7819b8969d4",
+      "bytes": 1617,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-09/job_state.json",
+      "sha256": "d5ebc41e611a3f820cd13635d89185b944d6ebe5fcfa7f6f732619b129ad8970",
+      "bytes": 1632,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-09/qc.json",
+      "sha256": "5cde7fc799c0f394b4fc5d8fbb440f7cccba649c4de0cf7af81935626144ff8d",
+      "bytes": 53456,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-09/raw.grib",
+      "sha256": "99457c2d679d4ac29dcf711c91bb98ec7f15908057039f1bc9f380ece9f3f1f4",
+      "bytes": 300480,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-09/transfer_receipt.json",
+      "sha256": "c5c48bad0ec1d0a6f25c01f011124700bf8813bf3c6e021528f424b40406fe00",
+      "bytes": 1597,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-10/job_state.json",
+      "sha256": "4da9ce12e641d3483a9b430f67829bac7eeeee914bc2b9b4cc7a5b0da731c574",
+      "bytes": 1652,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-10/qc.json",
+      "sha256": "ea3426ae1b89d28f1b44c193f0db73b8446f454415c15a7ca5e61f2e8adc02cb",
+      "bytes": 55323,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-10/raw.grib",
+      "sha256": "4a267b6d4082fd3c8a69b56fa3fc95eb4bcb53179b4a92ce1ebe7459817e63b8",
+      "bytes": 310496,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-10/transfer_receipt.json",
+      "sha256": "92359bcc32e0fd2b61b172ad8775dd751a26c71c91d6d54cb1724a2fc96ce998",
+      "bytes": 1617,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-11/job_state.json",
+      "sha256": "ee031e6333c22b4e003cc9a773cb22a5e2c7463b61cce6e821eb7a1590ad54d5",
+      "bytes": 1632,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-11/qc.json",
+      "sha256": "c317bb66306a4426e3219f8832b53583bf130b5626c32e1fc7802d6c47ce39f3",
+      "bytes": 53730,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-11/raw.grib",
+      "sha256": "4a3d5163459a21888484d93c82dd3ab182ebc95e20acbabd81faaf8a9c23fb5e",
+      "bytes": 300480,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-11/transfer_receipt.json",
+      "sha256": "f8728af76952fc4ff32a03be3eb42795cfdb64bb9d70038e2b30f6fffdb82435",
+      "bytes": 1597,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-12/job_state.json",
+      "sha256": "0fd1f42edbd87f0ba6c77653b2b98bafa2f1051e32778ad75108934d6fb22b02",
+      "bytes": 1652,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-12/qc.json",
+      "sha256": "6693bd7dbd782084ba00d8d9fd1c0347b29f2eb4659f3c983bafe481fc307918",
+      "bytes": 55492,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-12/raw.grib",
+      "sha256": "ddda90f964c01fb99c4810f85718df3acb769e44efe549dccea39f28537d86c4",
+      "bytes": 310496,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2024-12/transfer_receipt.json",
+      "sha256": "647fc1d34c7602afb2eb2da612e919c49a4615790317fb86a500057c80cd3e6a",
+      "bytes": 1617,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-01/job_state.json",
+      "sha256": "81041afef4ab62d84937b468199d74c12dd256e24a995499404941bb13504244",
+      "bytes": 1652,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-01/qc.json",
+      "sha256": "a4d918f4ec780274b310ebde9b2a8b3b924180958e0431b9d8abc474bbbc182c",
+      "bytes": 55629,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-01/raw.grib",
+      "sha256": "21f8103282577ddd01c36fc0ccf0503a1c3048e88b687c7ca4de8635b8382cf1",
+      "bytes": 310496,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-01/transfer_receipt.json",
+      "sha256": "2f505a94e01490719d68b4cf5ab4333da325601f3b0153af13d65a00b6d528ac",
+      "bytes": 1617,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-02/job_state.json",
+      "sha256": "c10b736421ad00b8643983c5e967e56a0f1d745b6f1fa4924b66d2a53acb43a7",
+      "bytes": 1592,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-02/qc.json",
+      "sha256": "bfc93b63be3e8019de4fe24ef30a19cf6fb7e6628510461dc3d222ee83ffac9d",
+      "bytes": 50299,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-02/raw.grib",
+      "sha256": "728a9b4b403b9457bff97fadb352316149ac2bf4d3d31c27bc5440ec8e4cf001",
+      "bytes": 280448,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-02/transfer_receipt.json",
+      "sha256": "ce878b5f42fda981f621810aa3e62131483c63f03640119995feb2c6df0c31ee",
+      "bytes": 1557,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-03/job_state.json",
+      "sha256": "7254d36a02fecb6e39d2092cebf04a3f65387e7e634d7bb47c069ef6158b1ec0",
+      "bytes": 1652,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-03/qc.json",
+      "sha256": "cdc31a535ebb18357a22bb9a3734cec8671ea9416636b945998334f41987a3ee",
+      "bytes": 55651,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-03/raw.grib",
+      "sha256": "8b4cf83d02d3e2699014433a87352dfd6c16ced4e88d57436470c3a9fc996b8b",
+      "bytes": 310496,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-03/transfer_receipt.json",
+      "sha256": "0f23fba530ad4691586907a4bdd3f6f7e56aa055ce3e9eb2f10eabf2d5b9d9f5",
+      "bytes": 1617,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-04/job_state.json",
+      "sha256": "bfff5a5b5fa0dfbcd72c9014c5339c15acf1112359f6818cec611a26c1dd62d8",
+      "bytes": 1632,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-04/qc.json",
+      "sha256": "4b37e156e0f4ac2826bd1f0ee6c7b7890598dc20da6cee5870539f697d97ee82",
+      "bytes": 53863,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-04/raw.grib",
+      "sha256": "25b4223c4e0e427bc2280164a91e003106b9009f0a319b2eeacb0a7c43fab35b",
+      "bytes": 300480,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-04/transfer_receipt.json",
+      "sha256": "ddd3602f71b0ebaf66d57d80f6023b0553aa680ed14fa6e21b3ef32ea5c81dea",
+      "bytes": 1597,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-05/job_state.json",
+      "sha256": "830bd304dfab470c37e7a371e0d4986f25c692cbcd82be369131e0d756512862",
+      "bytes": 1652,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-05/qc.json",
+      "sha256": "f2b82bb647083ba2ec813e64243a4fdcb3fd29bdb1385463ecf81688a5150456",
+      "bytes": 55436,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-05/raw.grib",
+      "sha256": "68ea9d5e9725c7d160f6ad352459f790fe7276b1f60a66574ef1edbab54d4f03",
+      "bytes": 310496,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-05/transfer_receipt.json",
+      "sha256": "ef2128abbe9ec250f22afdb56459b61f9300425336aa64d6868e0563b682b34f",
+      "bytes": 1617,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-06/job_state.json",
+      "sha256": "fff62f290aba14b70c3ee73af935d39a262537143be4dad30ca4bddf3e2b625e",
+      "bytes": 1632,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-06/qc.json",
+      "sha256": "e0de37320fb99d13c0d6bf3c3dc7152557bd2637e4c02687d9d0025c8a16f9fc",
+      "bytes": 53477,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-06/raw.grib",
+      "sha256": "b609a78f0539cef6cf7cbb71f89c25d3416a61dc5022a2a4d88f35f40ea37a43",
+      "bytes": 300480,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-06/transfer_receipt.json",
+      "sha256": "3ca37ed1b3849aeb29bd1fffeadbc8dc1dce56b19e0c8752673be5150405c300",
+      "bytes": 1597,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-07/job_state.json",
+      "sha256": "2473113fbeb122d11d31c8cd619ea37d73316300db22b03b5082a6a660dfcd44",
+      "bytes": 1652,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-07/qc.json",
+      "sha256": "af440b9bc557b6b112a43a463e6abc65228e3ff994699714a63609b0c03753cf",
+      "bytes": 54807,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-07/raw.grib",
+      "sha256": "d676b55ff99ad4c35abe753f911cab9b717e425b5764df5bd632a7c6d8283aae",
+      "bytes": 310496,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-07/transfer_receipt.json",
+      "sha256": "d7af479bab4f697bb1b02d07d8fb72d28733ddab6b98523134c9358865baf5db",
+      "bytes": 1617,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-08/job_state.json",
+      "sha256": "05909c6c99ce409d2727b24c5e791cb5d9963c1b4184eb9f42737f77520efa39",
+      "bytes": 1652,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-08/qc.json",
+      "sha256": "4a94d0d2c15fc1964276651606bbfe1dfa0a50188787668c7eccdd35717396c6",
+      "bytes": 55252,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-08/raw.grib",
+      "sha256": "4f6d49fc426858e68b52b6a94fe7c0cffb9cacae992a3a8e46ed517fcbdd53ff",
+      "bytes": 310496,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-08/transfer_receipt.json",
+      "sha256": "b253fa6b6fb74ece96748d4bc109bd3efd734f5ba78141ee9c4d4b0e31b17019",
+      "bytes": 1617,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-09/job_state.json",
+      "sha256": "e3849b7822c60a4c4fb3d471e8c17f5cab6fa2fd3fb355c70d47927c8530d91c",
+      "bytes": 1632,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-09/qc.json",
+      "sha256": "9f4f3b3880c793b7725fffe68efd34cf4f700227c4df5af3fa0095bcca1f3fc0",
+      "bytes": 53498,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-09/raw.grib",
+      "sha256": "8b9ac2dca07514bae4ab85136453012c9b3bd9d11592401511052ea06998cf28",
+      "bytes": 300480,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-09/transfer_receipt.json",
+      "sha256": "d354d966a6a96a21d655339d9e6fcf7450b6e442c69abafdb95b02a6e47b61df",
+      "bytes": 1597,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-10/job_state.json",
+      "sha256": "83c8f2fe2efc17f7be8b789aefa10f5abf2b6b93a05b5224faa08eb556c2a0c3",
+      "bytes": 1652,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-10/qc.json",
+      "sha256": "8a5dc91269a26a7ea6955357ac060d9c123b700edf33418f8001ea202d0a3dfe",
+      "bytes": 55356,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-10/raw.grib",
+      "sha256": "6df1af3d6979a5212de590269dab17900f214f56c51683370f2a1696480767bb",
+      "bytes": 310496,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-10/transfer_receipt.json",
+      "sha256": "02d9f4c79097d326a85cf7065b817540ce8c93c6197cb76ac10978e68df52001",
+      "bytes": 1617,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-11/job_state.json",
+      "sha256": "d14cb6e29afd9c46425e5daa2e584f1e250abe5ec136a6f40f1fb84b7e7d73df",
+      "bytes": 1632,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-11/qc.json",
+      "sha256": "4deaf6cd37fa1f53dd8d6149fac942300683b040e6674fff8ce3b709b54a58b8",
+      "bytes": 53536,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-11/raw.grib",
+      "sha256": "ac76b3aa1bcf24994eeea69ab70ce3fcab8326b3fae66dc8d33a7554bac85847",
+      "bytes": 300480,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-11/transfer_receipt.json",
+      "sha256": "6a69032bc49d82c6e3cfa0efadeaca7ecc6efec617914239e10e9aa9f5ede2e6",
+      "bytes": 1597,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-12/job_state.json",
+      "sha256": "9566f3103f37863f330879b61dfac98f3be90b595c6aee855e77f8a32c89646c",
+      "bytes": 1652,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-12/qc.json",
+      "sha256": "fc6a5a2228f2381850a9bc8b138f721d981f55d77281b6cbadee5b2f4040ba15",
+      "bytes": 55576,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-12/raw.grib",
+      "sha256": "867943735499d4d6946725e2936a540ebb52f9b326ed78338e96e67efc9ebe31",
+      "bytes": 310496,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/gfas_2025-12/transfer_receipt.json",
+      "sha256": "23361012f37a3cbff5bff3a0045be4f241d00828b3dd1eda4e548e53fd67d4f1",
+      "bytes": 1617,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2023-12/job_state.json",
+      "sha256": "1dc9a666be05ca325367330010ab43c9d9de79b5f2a1adbe237f95a2f71827a3",
+      "bytes": 1862,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2023-12/qc.json",
+      "sha256": "a18da40f3cce3125821a38fc98a7c28fd59ee635aae8688c62b715853842a4f2",
+      "bytes": 572439,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2023-12/raw.grib",
+      "sha256": "7067a338bd5f12fa1b97dd617ffd422e4847cb103086a44ac9fc58a433ab1782",
+      "bytes": 62208,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2023-12/transfer_receipt.json",
+      "sha256": "f954e203fd7ce26aedcb0909640f59a9e0c742462218592fa8ee856ddf14eb4c",
+      "bytes": 1826,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-01/job_state.json",
+      "sha256": "59dc5f2140ec8b10870bc9119257575b731cabe22f6308376ec4e4447e5e1127",
+      "bytes": 2302,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-01/qc.json",
+      "sha256": "d639ae709637a28d2dfb9437571cf9f9cfd89f6f93aa63f82c670decedaf9312",
+      "bytes": 1971203,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-01/raw.grib",
+      "sha256": "49962014f6dbaee91b2b686a777c3ee88ef5731c799c2a83f1b574925039bef6",
+      "bytes": 214272,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-01/transfer_receipt.json",
+      "sha256": "daaf8cb1ea40e343dd9ca9923b7c9b591c8f70c4955e21d3d18fdd5b18429a6e",
+      "bytes": 2267,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-02/job_state.json",
+      "sha256": "47a937c784a1e56b45d2ce8bfa421e187d4112d366f072bb705898fd6df02974",
+      "bytes": 2262,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-02/qc.json",
+      "sha256": "16f6f5abf1f46368ab135bea16d7278f934780f0763e1a07f23c416378bc1e9f",
+      "bytes": 1844090,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-02/raw.grib",
+      "sha256": "dba0eb8905edc9ed6e686ef88086c7aaa279515ffdd9343bb12814fbf572601d",
+      "bytes": 200448,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-02/transfer_receipt.json",
+      "sha256": "5b37c0c15fba5f5b29c809a582db1aa478ce84f1b2c01863c65a2876af5beb1b",
+      "bytes": 2227,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-03/job_state.json",
+      "sha256": "bd4253549ede997334398bf058f3068bb867327543a0e769f0d25d029bcd2b72",
+      "bytes": 2302,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-03/qc.json",
+      "sha256": "d455bd3a4a9428037a9d77ea1fe2dfa3f1607f1229ff91a992aa26cf1f34cce3",
+      "bytes": 1971153,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-03/raw.grib",
+      "sha256": "4ec8827f79185251bcded4c24630d2d637ae5015d2d2afc63e03a79b5ab025ea",
+      "bytes": 214272,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-03/transfer_receipt.json",
+      "sha256": "7e7dea1b5d497d8cda2b742b5d3dac88c473f8266daf7de57910fae6f115aaab",
+      "bytes": 2267,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-04/job_state.json",
+      "sha256": "3d0d899b0192dcf354c53837a49c6fcafa28b301645fe74ceae9293effaf2a23",
+      "bytes": 2282,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-04/qc.json",
+      "sha256": "99046ef97fd081359b4cebfefa5ab01d508123c81b416090f5aff75f13471de1",
+      "bytes": 1907401,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-04/raw.grib",
+      "sha256": "832828887a06a1f91a1b15d8fd7df64dc3c3db3487620b62737d1e8eab35779c",
+      "bytes": 207360,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-04/transfer_receipt.json",
+      "sha256": "ce8da85a88abb11fa1c99fb91523d9d1d870da767dc2771036e4bfc75843f20f",
+      "bytes": 2247,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-05/job_state.json",
+      "sha256": "7d7bccbff67d9ae00b03f756f909a8e67e5c6779aa387c69960158a8e457dd8d",
+      "bytes": 2302,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-05/qc.json",
+      "sha256": "a2d8a6c60806b65fda0bb0626b90eea028def762fe8f159ef9c80fed420e124b",
+      "bytes": 1971083,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-05/raw.grib",
+      "sha256": "6c717f3825feea43d0589ae3f37dfd4cfb49f8f1071a1972b921c511377015d4",
+      "bytes": 214272,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-05/transfer_receipt.json",
+      "sha256": "6c0448bf406c171315e1fb419e708e907168fdf4ee31aacbcdb72b06d04b0294",
+      "bytes": 2267,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-06/job_state.json",
+      "sha256": "39b6f0716300d851eec3cd4c90fcf1e73da1880e2a2ba80fa97214a5a3b081e8",
+      "bytes": 2282,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-06/qc.json",
+      "sha256": "f1aade5d7c8ec75c3db72d000d7852a191d72d2dc311ba4b41c22fcb5b452ef7",
+      "bytes": 1906852,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-06/raw.grib",
+      "sha256": "2b15ff017199ea1ac65209f8d03718fe6277a5f2996d94c1121b4375c693a30f",
+      "bytes": 207360,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-06/transfer_receipt.json",
+      "sha256": "449f2d96721d3c595208de8da8b3385455ea80d2f361b9f2f94918537c1886fb",
+      "bytes": 2247,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-07/job_state.json",
+      "sha256": "5721492b9bbe048d46549a338085e8265406d5ff1e9f392349006de92e819a1b",
+      "bytes": 2302,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-07/qc.json",
+      "sha256": "7d3c96a8084f68032553c04666c83701860fe9beb13ac53fcbd03fbc03cba7f2",
+      "bytes": 1970277,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-07/raw.grib",
+      "sha256": "1c7d8eaefe74efc4e79906cbaead2b51cdd6c42f9d167713f9af3f23a4fd1e96",
+      "bytes": 214272,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-07/transfer_receipt.json",
+      "sha256": "db3275eb9523bb57e9818cb550065212dd6c36d7992d3ad9ec1e105568ea7aa2",
+      "bytes": 2267,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-08/job_state.json",
+      "sha256": "47261c0ca6aaa181dbde09c8329b651097838d9d4bbdb24d02ec38994ea2ef61",
+      "bytes": 2302,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-08/qc.json",
+      "sha256": "597882c040509ecf0ef6d80a41bca6ca9025278779c6b609e1c05ae4a53dd0d6",
+      "bytes": 1970987,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-08/raw.grib",
+      "sha256": "b172336b4ae5838bb56c71f6b97493df204f5cad856ffdeab5dc6bfa81edcb6d",
+      "bytes": 214272,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-08/transfer_receipt.json",
+      "sha256": "ce33ca5f2723f6488fa4ec14258f7549ab41c5750961137f42a4a465e8fa2952",
+      "bytes": 2267,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-09/job_state.json",
+      "sha256": "c23076efc968846d5fff262deea7c05e06b0d33acebe70a119ad9115ae93a9e3",
+      "bytes": 2282,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-09/qc.json",
+      "sha256": "6588b2b7cd0c829aec08b18371740e083b78cfeb9ae4ac0b0740e801126c84bf",
+      "bytes": 1907334,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-09/raw.grib",
+      "sha256": "1228eb9a086ce8078ebd001144623acd449677af395bb64e6c6d3e600b3e0381",
+      "bytes": 207360,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-09/transfer_receipt.json",
+      "sha256": "dada50e6259030c6b0225e83cd716d2c90ba2f2ae474441c408ba4a5d714fdaf",
+      "bytes": 2247,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-10/job_state.json",
+      "sha256": "67b672b2bb598c0ca8e0e99b7c4819e00e641a71f7adb5070d82ecb6a148963d",
+      "bytes": 2302,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-10/qc.json",
+      "sha256": "0a2ca2b40e3dfdcfbf16cf5f9c82b0d9d8e1a2eea1c64d2c3a42409340740d41",
+      "bytes": 1970691,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-10/raw.grib",
+      "sha256": "e562997f49f619186373d73b3fea3f5290feba48ab063e3cf147e68a369117d4",
+      "bytes": 214272,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-10/transfer_receipt.json",
+      "sha256": "5d91f8adbcbacb3ab02746bafcc0a3763176cae17283137fed82823c9b955232",
+      "bytes": 2267,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-11/job_state.json",
+      "sha256": "8901b3147905eb022f7bdcc12a52792afeb6c2eceebfd663d4ce7fd47142b3c7",
+      "bytes": 2282,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-11/qc.json",
+      "sha256": "49ed9e1a3c7d8a3e3ca38aec65d91d95d9f20717669b283fbccd8c82172f77fe",
+      "bytes": 1907356,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-11/raw.grib",
+      "sha256": "dd0d9cd3efb60b00699f02cb2492c8a849eaa8d8644dd8546cafa9dbfe2a2df9",
+      "bytes": 207360,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-11/transfer_receipt.json",
+      "sha256": "c942842e28604d07746e08ab79a691d5c7ccb766ce4cdd68d12d5f2024717d42",
+      "bytes": 2247,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-12/job_state.json",
+      "sha256": "c912b5a3c4bdbd2aed5ee53277b6903f64c4e4435c37c3446081899d4f2c434b",
+      "bytes": 2302,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-12/qc.json",
+      "sha256": "7ef70c39490adf4e07a61f7a735d475b73db86705c71db233fa5b9703e1acda9",
+      "bytes": 1970715,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-12/raw.grib",
+      "sha256": "d1cf3c49dcd54e75e6b893d87193eedeb5801c90a17d677620108b1be3c09573",
+      "bytes": 214272,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2024-12/transfer_receipt.json",
+      "sha256": "36fe2e0234f059739b7be161a512a81ae23e3a38cc7f4cbfb3b95cf7b6f9a88a",
+      "bytes": 2267,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-01/job_state.json",
+      "sha256": "9363934cf33b976c267fe844804f46f4b455962a2f12ed7482168d8c1906792b",
+      "bytes": 2302,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-01/qc.json",
+      "sha256": "894d29e1248a1392b6fa5b1e11c38da5bd933e0b4dc0816d2ad81200bb6255ca",
+      "bytes": 1970679,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-01/raw.grib",
+      "sha256": "39a23c75218c63e95aeaf1d979de655a6f5ac472e67b17c9fd76eb29c757c26d",
+      "bytes": 214272,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-01/transfer_receipt.json",
+      "sha256": "9bb0b077d3a1270104a8d348308cb82030f251da36f15d8cc37bd4eeae9aa150",
+      "bytes": 2267,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-02/job_state.json",
+      "sha256": "9b3cd227efb47961821ef1463e61f7ccba1dd0d2615b9edf9283f75c925ec68c",
+      "bytes": 2242,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-02/qc.json",
+      "sha256": "0da388c87c801eec64f4d24bf439fa18b552971332fe80cc0381081c531899d1",
+      "bytes": 1779964,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-02/raw.grib",
+      "sha256": "bd102063e0675f024afe330a9adb7decac7e6ca9d4816846aa7a0d45e9bfcca3",
+      "bytes": 193536,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-02/transfer_receipt.json",
+      "sha256": "484849f3dfd61d26f5c2f0333b4d85034b245a7d83a9856944ec929242e16fc2",
+      "bytes": 2207,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-03/job_state.json",
+      "sha256": "e5f567e3b5605e64365c9000bf0a8daca7059e6fb190476b6d934a4a5002c42a",
+      "bytes": 2302,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-03/qc.json",
+      "sha256": "89550578be53039f9132ea1b36739c0818e632be5622164a0ecf8bc7a91cef30",
+      "bytes": 1970118,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-03/raw.grib",
+      "sha256": "2f48165c86027c65b97292515a810ca2da31d8d52fa6075d6e95bca5ef05e35e",
+      "bytes": 214272,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-03/transfer_receipt.json",
+      "sha256": "7a722263c5d34613ba7e41d2a67d654fbde3f49d2b7db9f7727b70d107d59a21",
+      "bytes": 2267,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-04/job_state.json",
+      "sha256": "1d449d482893aa3374bce2c4b9d38a738d268ebe3b2792cc962d09da9b95466e",
+      "bytes": 2282,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-04/qc.json",
+      "sha256": "8b2e613a3696ad890af3408af59d8d62eba36fe0e9bef1ada5c0065c12baa2e8",
+      "bytes": 1907207,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-04/raw.grib",
+      "sha256": "79b6d45993d843427a64a945fb45c755739b3859721eb1055af7ff6ae4feb18b",
+      "bytes": 207360,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-04/transfer_receipt.json",
+      "sha256": "e42de6da691daf79bbfb0c67d46406021349597cd137cf5e44f926b4bee4fa5a",
+      "bytes": 2247,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-05/job_state.json",
+      "sha256": "00f9beb7230114ac9674e1c450e8521182e2538a0121738e07e2752aaf4cc1ff",
+      "bytes": 2302,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-05/qc.json",
+      "sha256": "a5a415163f507bd0c488e7e89862681ca0f2be70d4e4972d702f89d3110f76b3",
+      "bytes": 1970761,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-05/raw.grib",
+      "sha256": "6f8f9d14dc68d9402e3e34fad11200227d8b00e182e5d6ed8c0bf60c3268212f",
+      "bytes": 214272,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-05/transfer_receipt.json",
+      "sha256": "99b717cd0a82fa7eda9b91f10b9a281d48673598b69227d515d53d6445e5091e",
+      "bytes": 2267,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-06/job_state.json",
+      "sha256": "80c12b92997c1aa3a392837e44b24fbfd12676f5b4f8d25eadd4b240d4cb0aa7",
+      "bytes": 2282,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-06/qc.json",
+      "sha256": "3254981a0d7e71ce51a352f2fe84ddd801cf4672d9938e3fa5f0e10b9c456cd7",
+      "bytes": 1906982,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-06/raw.grib",
+      "sha256": "20fee1c7eb00525b0af5e69f954c87b5f1adc50d9ef9c9362be5bbbc29638848",
+      "bytes": 207360,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-06/transfer_receipt.json",
+      "sha256": "326d696017378717f013154c742f89cc1953af3a315867f19ba565edecbad687",
+      "bytes": 2247,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-07/job_state.json",
+      "sha256": "4d5a3f19f36c56a3fbed78d4e0c8265fbebd251ec07b8b81692f90d94eb788cc",
+      "bytes": 2302,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-07/qc.json",
+      "sha256": "51bd6ef48fc3dad9756a2e4e4347ef68a97ec6a93b71195832296884687f5806",
+      "bytes": 1970410,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-07/raw.grib",
+      "sha256": "76b4eeb3be4bc7a94f694134d5c3a41c6f9d757fe122da5ed5b45dee7356f8f5",
+      "bytes": 214272,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-07/transfer_receipt.json",
+      "sha256": "a17a209533460c50e92f64d527b0f07965c00afc791c759e97c89398de08c72f",
+      "bytes": 2267,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-08/job_state.json",
+      "sha256": "21dc8c11eb0aa9093548f67e119e089782b3b2de9c85369d771d4b524da60269",
+      "bytes": 2302,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-08/qc.json",
+      "sha256": "80ce973f221fe4afb6af04e80003c365e216a81322d0fde060ceb427576d50ca",
+      "bytes": 1970548,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-08/raw.grib",
+      "sha256": "31ae0c91a72275866e07cc6cdc8bfb29c0bd75b16321d3b9fc4a5f74dce10424",
+      "bytes": 214272,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-08/transfer_receipt.json",
+      "sha256": "3905a9219e61800a948a9e2039a0bb370de1e026fd027f555ab11bd268889a00",
+      "bytes": 2267,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-09/job_state.json",
+      "sha256": "2fe2f0e12b3a37c02b4e22b3c17bb13934748458ef1c7902321808a94853a03b",
+      "bytes": 2282,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-09/qc.json",
+      "sha256": "e4fad9fd66ee89c8831154b1fcbeeb404f37fcb364eeb0dc7c2633dbaa3d8eb2",
+      "bytes": 1906841,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-09/raw.grib",
+      "sha256": "b8353ad946e81d041cca813c816b265eeebf8ae0367ab99508780d52cfa8284c",
+      "bytes": 207360,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-09/transfer_receipt.json",
+      "sha256": "03ee257a1f35116c7538321ab0152eb40f85286aaffb6e45a018f7ede8344229",
+      "bytes": 2247,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-10/job_state.json",
+      "sha256": "c7344af1d87f710e53d1b4b794a65dfe9b619499dc8535846f1c69fb2a387ffe",
+      "bytes": 2302,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-10/qc.json",
+      "sha256": "b49624185e7f939f1709788db5bbe640ab4b42ebeefa0bfe4413b2593e1260d1",
+      "bytes": 1970721,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-10/raw.grib",
+      "sha256": "1f003b73b1f240c2201cf6ab61f2a150b87b105e50d03c533f0f5e6b3ad7a7f8",
+      "bytes": 214272,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-10/transfer_receipt.json",
+      "sha256": "144e1b8f4d85807888d0cbeb52c1707248973d14a26bc87f9af0c04bb94ba10b",
+      "bytes": 2267,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-11/job_state.json",
+      "sha256": "0e32fe3c87d9a885a05ee74dfa12147c0d4bf69591d1edb91723cfd2673ce9b8",
+      "bytes": 2282,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-11/qc.json",
+      "sha256": "e6532e74e4c00f40039ad33b820506d3ee947306ca1b50cc7a49b2dfb514d1cd",
+      "bytes": 1907110,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-11/raw.grib",
+      "sha256": "695a3777bca132d4ba95c455203869793708ac6117ca315832a31f5979732c38",
+      "bytes": 207360,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-11/transfer_receipt.json",
+      "sha256": "6eb21ae72c0775717d548c28d58740836d1683f93c0aa11ac77820b7e46b585b",
+      "bytes": 2247,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-12/job_state.json",
+      "sha256": "86ded22ecb9e05537e079ffcb7d9269e7cc5af725917f80e7a0ff6df731a32d9",
+      "bytes": 2282,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-12/qc.json",
+      "sha256": "6894a06a9d011d4c1bb790a231361fdd8036985935a3095d638897cc922dda58",
+      "bytes": 1907094,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-12/raw.grib",
+      "sha256": "f92d195ce1122d933577831e5d3d53239cbed2bace014a628716d1b672c71d51",
+      "bytes": 207360,
+      "status": "success"
+    },
+    {
+      "file": "ads/jobs/pm_2025-12/transfer_receipt.json",
+      "sha256": "4e7361122c0d7c95f95a279a854bd9f45b77ac828b5ae3e267f489106d6377ae",
+      "bytes": 2247,
+      "status": "success"
+    },
+    {
+      "file": "ads/manifest.json",
+      "sha256": "f3391c6113a1dbb4b98ba09423cde2d55febbfaf5ce5ae6da7884e373600b3b8",
+      "bytes": 22103,
+      "status": "success"
+    },
+    {
+      "file": "ads/plan.json",
+      "sha256": "da24a2da1802acdbd780be08e3b4dcee84742bb843cb6a88383762ca26811721",
+      "bytes": 80096,
+      "status": "success"
+    },
+    {
+      "file": "ads/pm_daily_profiles.csv",
+      "sha256": "29700ebc241343818483cc1cc53a4030065f5eb547978192134619f6e3b51920",
+      "bytes": 185367,
+      "status": "success"
+    },
+    {
+      "file": "ads/pm_nearest_hourly.csv",
+      "sha256": "0c5b3a594aede0adda7686b9e35a265e2267f69c7f404c9c64b697f6968b38c3",
+      "bytes": 6200786,
+      "status": "success"
+    },
+    {
+      "file": "ads/sessions/20261021T200505952093Z.json",
+      "sha256": "1532cb103397358ea851a22d01254f269213b2644d2bc2f8aba725533da3738b",
+      "bytes": 432,
+      "status": "success"
+    },
+    {
+      "file": "ads/sessions/20261021T200526182722Z.json",
+      "sha256": "8c6abedf936e1a126e231b0d41f500f36b18181c900dc855a9eff8ea5b39fe50",
+      "bytes": 432,
+      "status": "success"
+    },
+    {
+      "file": "ads/sessions/20261021T212819901016Z.json",
+      "sha256": "431c35341b32e71b60921c74e4316ce1fc4545d78e9920e1735de5e378eb9ec2",
+      "bytes": 432,
+      "status": "success"
+    },
+    {
+      "file": "ads/sessions/20261021T213137744236Z.json",
+      "sha256": "3efd0d1cc84747252edb74799e80b9ca06fde9cace9480b20bb8f5c941a78fcb",
+      "bytes": 432,
+      "status": "success"
+    },
+    {
+      "file": "ads/sessions/20261021T213302238743Z.json",
+      "sha256": "a23ea716dceeaae36864f3b97e2fb463cdafe5ec434ed9722ce946152162f04a",
+      "bytes": 432,
+      "status": "success"
+    },
+    {
+      "file": "ads/source_coverage_calendar.csv",
+      "sha256": "ed61cd324baf90e0dcd5e17af2f9429ad9881d93c20f5a46cebc578fda705af1",
+      "bytes": 37503,
+      "status": "success"
+    },
+    {
+      "file": "weather/transfer_manifest.json",
+      "sha256": "44b7da1a8f67b4bc719b05ef1ca6bca84488d580a4297a394e83d56f247218f5",
+      "bytes": 2501,
+      "status": "success"
+    },
+    {
+      "file": "weather/weather_previous_full_2024.response",
+      "sha256": "b1d9d1d42a5bb508f4c00623740394d6bc38db075357a53e631523192a3d652e",
+      "bytes": 413731,
+      "status": "success"
+    },
+    {
+      "file": "weather/weather_previous_full_2025.response",
+      "sha256": "ea9bb2aacc32c34f25470d74bce31df6d57a5926a4761064f3c8e526f63afc2d",
+      "bytes": 411573,
+      "status": "success"
+    }
+  ],
+  "purpose": "Exact actual API responses and original acquisition receipts; current retrieval is not historical publication."
+}
